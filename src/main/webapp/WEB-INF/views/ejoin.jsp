@@ -4,6 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="/resources/css/title.css">
+<link rel="stylesheet" href="/resources/css/content.css">
 <script type="text/javascript" src="/resources/js/join.js"></script>
 <title>레슨모아 전문가 가입</title>
 </head>
@@ -46,14 +48,14 @@
 										<td><input class="inputbox01" type="text" name="eemail"></td>
 									</tr>
 									<tr>
-										<td class="content_text">전화번호 : </td>
+										<td class="content_text">휴대전화번호 : </td>
 										<td><input class="inputbox01" type="text" name="emobile" placeholder="'-'빼고 입력"></td>
 									</tr>
 										<tr>
 										<td class="content_text">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별 : </td>
 										<td>
-											<input class="inputbox01" type="radio" name="egender" id="남">남&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<input class="inputbox01" type="radio" name="egender" id="여">여
+											<input class="inputbox02" type="radio" name="egender" id="남">남
+											<input class="inputbox02" type="radio" name="egender" id="여">여
 										</td>
 									</tr>
 										<tr>

@@ -4,6 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="/resources/css/title.css">
+<link rel="stylesheet" href="/resources/css/content.css">
 <title>레슨모아 로그인</title>
 </head>
 <body>

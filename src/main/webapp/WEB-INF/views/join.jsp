@@ -4,6 +4,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="/resources/css/title.css">
+<link rel="stylesheet" href="/resources/css/content.css">
 <script type="text/javascript" src="/resources/js/join.js"></script>
 <title>레슨모아 회원 가입</title>
 </head>
@@ -31,11 +33,11 @@
 								<form action="joinOk" method="post" name="join_frm">
 									<tr>
 										<td class="content_text">아 이 디 : </td>
-										<td><input class="inputbox01" type="text" name="mid"></td>
+										<td><input class="inputbox01" type="text" name="mid" autofocus="autofocus"></td>
 									</tr>
 									<tr>
 										<td class="content_text">비밀번호 : </td>
-										<td><input  class="inputbox01" type="password" name="mpw" placeholder="문자+숫자 포함 8자리 이상"></td>
+										<td><input  class="inputbox01" type="password" name="mpw" placeholder="문자 + 숫자 포함 8자리 이상"></td>
 									</tr>
 									<tr>
 										<td class="content_text">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름 : </td>
@@ -46,9 +48,10 @@
 										<td><input class="inputbox01" type="text" name="memail"></td>
 									</tr>
 									<tr>
-										<td class="content_text">전화번호 : </td>
-										<td><input class="inputbox01" type="text" name="mmobile" placeholder="'-'빼고 입력"></td>
+										<td class="content_text">휴대전화번호 : </td>
+										<td><input class="inputbox01" type="text" name="mmobile" placeholder="'-' 빼고 입력"></td>
 									</tr>
+									<br>
 									<tr>
 										<td colspan="2" align="center">
 											<input class="content_btn01" type="button" value="이전으로" onclick="script:window.location.href='login'">											

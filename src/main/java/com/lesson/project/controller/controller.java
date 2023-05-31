@@ -16,6 +16,11 @@ public class controller {
 		return "index";
 	}
 	
+	@RequestMapping(value = "/login")
+	public String login() {
+		return "login";		
+	}
+	
 	@RequestMapping(value = "/join")
 	public String join() {
 		return "join";		
@@ -26,9 +31,5 @@ public class controller {
 		return "ejoin";		
 	}
 	
-	@RequestMapping(value = "/login")
-	public String login() {
-		return "login";		
-	}
 
 }
