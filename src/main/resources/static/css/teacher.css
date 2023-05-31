@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+* {
+  margin:0;   /* 마진 리셋 */
+  padding:0;   /* 패딩 리셋 */
+  box-sizing: border-box;   /* 박스 영역은 테두리까지 */ 
+}
+
+.detail > img {
+	padding: 50px;
+	width: 25%;
+	height: 25%;
+}
