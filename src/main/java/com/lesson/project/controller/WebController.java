@@ -18,6 +18,6 @@ public class WebController {
 	
 	@RequestMapping(value= "/expert")
 	public String expert() {
-		return "exptert";
+		return "expert";
 	}
 }
