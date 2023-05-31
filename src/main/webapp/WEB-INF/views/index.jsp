@@ -21,11 +21,9 @@
             <li><a href="expert">전문가</a></li>
             <li><a href="comunity">커뮤니티</a></li>
             <li><a href="qanda">Q&A</a></li>
-          </ul>
-          <div class="topMenu02">
             <li><a href="login">로그인</a></li>
             <li><a href="join">회원가입</a></li>
-           </div>
+          </ul>
         </nav>
       </header>
       <main class="contens">

@@ -6,18 +6,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class WebController {
 	
-	@RequestMapping(value = "/main")
-	public String main() {
-		return "main";
+	@RequestMapping(value = "/index")
+	public String index() {
+		return "index";
 	}
 	
 	@RequestMapping(value = "/")
-	public String main2() {
-		return "main";
+	public String index2() {
+		return "index";
 	}
 	
-	@RequestMapping(value= "/expert")
+	@RequestMapping(value = "/expert")
 	public String expert() {
 		return "expert";
+	}
+	
+	@RequestMapping(value = "/comunity")
+	public String comunity() {
+		return "comunity";
 	}
 }
