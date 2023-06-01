@@ -37,16 +37,16 @@
      		<th>요가</th>
      	</tr>
      	<tr align="center" bgcolor="white">
-     		<td><a href="#">김종국</td>
-     		<td><a href="#">김종국</td>
-     		<td><a href="#">김종국</td>
-     		<td><a href="#">김종국</td>
+     		<td><a href="/include/aaa">AAA</td>
+     		<td><a href="/include/bbb">BBB</td>
+     		<td><a href="/include/ccc">CCC</td>
+     		<td><a href="/include/ddd">DDD</td>
      	</tr>
      	<tr align="center" bgcolor="white">
-     		<td><a href="#">김종국</td>
-     		<td><a href="#">김종국</td>
-     		<td><a href="#">김종국</td>
-     		<td><a href="#">김종국</td>
+     		<td><a href="/include/eee">EEE</td>
+     		<td><a href="/include/fff">FFF</td>
+     		<td><a href="/include/ggg">GGG</td>
+     		<td><a href="/include/hhh">HHH</td>
      	</tr>
      </table>
      </div>
