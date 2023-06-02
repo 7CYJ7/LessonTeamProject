@@ -20,6 +20,14 @@ td.main_text {
 	text-align: left;
 }
 
+td.main_text02 {
+	font-size: 20px;
+	font-family: malgun;
+	font-weight: bold;
+	color: #808080;
+	text-align: left;
+}
+
 input.inputbox01 {
 	border: 1px solid #c0c0c0;
 	background-color: #ffffff;

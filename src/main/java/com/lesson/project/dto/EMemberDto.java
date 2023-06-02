@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class EMemberdto {
+public class EMemberDto {
 	
 	private String eid; //아이디
 	private String epw; //비밀번호

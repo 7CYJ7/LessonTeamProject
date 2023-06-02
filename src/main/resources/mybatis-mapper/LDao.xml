@@ -1,1 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+   PUBLIC "-//mybatis.org/DTD Mapper 3.0/EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+<mapper namespace="com.lesson.project.dao.LDao">
+
+	<insert id="joinDao">
+		INSERT INTO le_member(mid, mpw, mname, memail, mmobile) VALUES (#{param1}, #{param2}, #{param3}, #{param4}, #{param5})
+	</insert>
+	
+	<select id="checkIdDao" resultType="int">
+		SELECT COUNT(*) FROM le_member WHERE mid=#{param1}
+	</select>
+	
+	<select id="checkIdPwDao" resultType="int">
+		SELECT COUNT(*) FROM le_member WHERE mid=#{param1} AND mpw=#{param2}
+	</select>
+	
+	<insert id="e_joinDao">
+		INSERT INTO le_expert(eid, epw, ename, eemail, emobile, egender, etype, earea) VALUES (#{param1}, #{param2}, #{param3}, #{param4}, #{param5}, #{param6}, #{param7}, #{param8})
+	</insert>
+	
+	<select id="e_checkIdDao" resultType="int">
+		SELECT COUNT(*) FROM le_expert WHERE eid=#{param1}
+	</select>
+	
+	<select id="e_checkIdPwDao" resultType="int">
+		SELECT COUNT(*) FROM le_expert WHERE eid=#{param1} AND epw=#{param2}
+	</select>
+	
+	
+</mapper>

@@ -30,10 +30,10 @@
 						<td class="contentbox">
 							<center>
 								<table border="0" cellspacing="0" cellpadding="10">
-								<form action="joinOk" method="post" name="join_frm">
+								<form action="ejoinOk" method="post" name="ejoin_frm">
 									<tr>
 										<td class="content_text">아 이 디 : </td>
-										<td><input class="inputbox01" type="text" name="eid"></td>
+										<td><input class="inputbox01" type="text" name="eid" autofocus="autofocus"></td>
 									</tr>
 									<tr>
 										<td class="content_text">비밀번호 : </td>
@@ -61,18 +61,18 @@
 										<tr>
 										<td class="content_text">분&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;야 : </td>
 										<td>
-											<select name='type'>
-											  <option value='' selected>-- 선택 --</option>
-											  <option value='PT1'>퍼스널트레이닝(PT)</option>
-											  <option value='PT2'>크로스핏</option>
-											  <option value='PT3'>필라테스</option>
-											  <option value='PT4'>요가</option>
+											<select name='etype' id="etype">
+											  <option value='PT0' selected>-- 선택 --</option>
+											  <option value='PT1' name="퍼스널트레이닝(PT)" id="퍼스널트레이닝(PT)">퍼스널트레이닝(PT)</option>
+											  <option value='PT2' name="크로스핏" id="크로스핏">크로스핏</option>
+											  <option value='PT3' name="필라테스" id="필라테스">필라테스</option>
+											  <option value='PT4' name="요가" id="요가">요가</option>
 											</select>
 										</td>										
 									</tr>
 										<tr>
 										<td class="content_text">지&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;역 : </td>
-										<td><input class="inputbox01" type="text" name="earea"></td>
+										<td><input class="inputbox01" type="text" name="earea" placeholder="주소(지역 구까지 입력)"></td>
 									</tr>
 									<tr>
 										<td colspan="2" align="center">
