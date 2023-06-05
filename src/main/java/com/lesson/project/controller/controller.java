@@ -56,12 +56,12 @@ public class controller {
 		return "loginOk";
 	}
 	
-//	@RequestMapping(value = "/logout")
-//	public String logout(HttpSession session) {
-//		session.invalidate();//세션 삭제->로그아웃
-//		
-//		return "redirect:loginChoice";
-//	}
+	@RequestMapping(value = "/logout")
+	public String logout(HttpSession session) {
+		session.invalidate();//세션 삭제->로그아웃
+		
+		return "redirect:loginChoice";
+	}
 	
 	@RequestMapping(value = "/elogin")
 	public String elogin() {
@@ -90,12 +90,12 @@ public class controller {
 		return "eloginOk";
 	}
 
-//	@RequestMapping(value = "/elogout")
-//	public String logout(HttpSession session) {
-//		session.invalidate();//세션 삭제->로그아웃
-//		
-//		return "redirect:loginChoice";
-//	}	
+	@RequestMapping(value = "/elogout")
+	public String elogout(HttpSession session) {
+		session.invalidate();//세션 삭제->로그아웃
+		
+		return "redirect:loginChoice";
+	}	
 	
 	@RequestMapping(value = "/loginChoice")
 	public String loginChoice() {
