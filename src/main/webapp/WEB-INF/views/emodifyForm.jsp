@@ -30,10 +30,10 @@
 						<td class="contentbox">
 							<center>
 								<table border="0" cellspacing="0" cellpadding="10">
-									<form action="emodifyOk" method="post" name="ejoin_frm">
+									<form action="emodifyOk" method="post" name="e_join_frm">
 									<tr>
 										<td class="content_text">아 이 디 : </td>
-										<td><input class="inputbox01" type="text" name="eid" value="${eMemberDto.eid }" readonly="readonly"></td>
+										<td><input class="inputbox01" type="text" name="eid" value="${EMemberDto.eid }" readonly="readonly"></td>
 									</tr>
 									<tr>
 										<td class="content_text">비밀번호 : </td>
@@ -41,28 +41,29 @@
 									</tr>
 									<tr>
 										<td class="content_text">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름 : </td>
-										<td><input class="inputbox01" type="text" name="ename" value="${eMemberDto.ename }"></td>
+										<td><input class="inputbox01" type="text" name="ename" value="${EMemberDto.ename }"></td>
 									</tr>
 									<tr>
 										<td class="content_text">이 메 일 : </td>
-										<td><input class="inputbox01" type="text" name="eemail" value="${eMemberDto.eemail }"></td>
+										<td><input class="inputbox01" type="text" name="eemail" value="${EMemberDto.eemail }"></td>
 									</tr>
 									
 									<tr>
 										<td class="content_text">휴대전화번호 : </td>
-										<td><input class="inputbox01" type="text" name="emobile" value="${eMemberDto.emobile }"></td>
+										<td><input class="inputbox01" type="text" name="emobile" value="${EMemberDto.emobile }"></td>
 									</tr>
 									<tr>
 										<td class="content_text">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별 : </td>
 										<td>
-											<input class="inputbox02" type="radio" name="egender" value="${eMemberDto.egender }" readonly="readonly">
+											<input class="inputbox02" type="radio" name="egender" id="남"><span style="font-family: Arial;font-size: 15px;color: #808080;">남</span>
+											<input class="inputbox02" type="radio" name="egender" id="여"><span style="font-family: Arial;font-size: 15px;color: #808080;">여</span>											
 										</td>
 									</tr>
 									<tr>
 										<td class="content_text">분&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;야 : </td>
 										<td>
-											<select name='etype' id="etype">
-											  <option value='선택' selected>-- 선택 --</option>
+											<select name='etype' id="etype"  style="width:250px;height:30px;border: 1px solid #c0c0c0;background-color: #ffffff;font-family: Arial;font-size: 20px;color: #808080;">
+											  <option value='선택' selected>--- 선택 ---</option>
 											  <option value='퍼스널트레이닝(PT)' name="퍼스널트레이닝(PT)" id="퍼스널트레이닝(PT)">퍼스널트레이닝(PT)</option>
 											  <option value='크로스핏' name="크로스핏" id="크로스핏">크로스핏</option>
 											  <option value='필라테스' name="필라테스" id="필라테스">필라테스</option>
@@ -72,16 +73,16 @@
 									</tr>	
 									<tr>
 										<td class="content_text">지&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;역 : </td>
-										<td><input class="inputbox01" type="text" name="earea" value="${eMemberDto.earea }"></td>
+										<td><input class="inputbox01" type="text" name="earea" value="${EMemberDto.earea }"></td>
 									</tr>								
 									<tr>
 										<td class="content_text">가 입 일 : </td>
-										<td><input class="inputbox01" type="text" name="edate" value="${eMemberDto.edate }" readonly="readonly"></td>
+										<td><input class="inputbox01" type="text" name="edate" value="${EMemberDto.edate }" readonly="readonly"></td>
 									</tr>
 									
 									<tr>
 										<td colspan="2" align="center">
-											<input class="content_btn01" type="button" value="수정완료" onclick="joinCheck()">&nbsp;&nbsp;
+											<input class="content_btn01" type="button" value="수정완료" onclick="e_joinCheck()">&nbsp;&nbsp;
 											<input class="content_btn01" type="button" value="수정취소" onclick="script:window.location.href='index'">
 										</td>										
 									</tr>

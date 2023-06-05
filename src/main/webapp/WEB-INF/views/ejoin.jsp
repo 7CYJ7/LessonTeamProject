@@ -30,7 +30,7 @@
 						<td class="contentbox">
 							<center>
 								<table border="0" cellspacing="0" cellpadding="10">
-								<form action="ejoinOk" method="post" name="ejoin_frm">
+								<form action="ejoinOk" method="post" name="e_join_frm">
 									<tr>
 										<td class="content_text">아 이 디 : </td>
 										<td><input class="inputbox01" type="text" name="eid" autofocus="autofocus"></td>
@@ -54,14 +54,14 @@
 										<tr>
 										<td class="content_text">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별 : </td>
 										<td>
-											<input class="inputbox02" type="radio" name="egender" id="남" value="남자">남
-											<input class="inputbox02" type="radio" name="egender" id="여" value="여자">여
+											<input class="inputbox02" type="radio" name="egender" id="남"><span style="font-family: Arial;font-size: 15px;color: #808080;">남</span>
+											<input class="inputbox02" type="radio" name="egender" id="여"><span style="font-family: Arial;font-size: 15px;color: #808080;">여</span>
 										</td>
 									</tr>
 										<tr>
 										<td class="content_text">분&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;야 : </td>
 										<td>
-											<select name='etype' id="etype">
+											<select name='etype' id="etype"  style="width:250px;height:30px;border: 1px solid #c0c0c0;background-color: #ffffff;font-family: Arial;font-size: 20px;color: #808080;">
 											  <option value='선택' selected>-- 선택 --</option>
 											  <option value='퍼스널트레이닝(PT)' name="퍼스널트레이닝(PT)" id="퍼스널트레이닝(PT)">퍼스널트레이닝(PT)</option>
 											  <option value='크로스핏' name="크로스핏" id="크로스핏">크로스핏</option>
@@ -77,7 +77,7 @@
 									<tr>
 										<td colspan="2" align="center">
 											<input class="content_btn01" type="button" value="이전으로" onclick="script:window.location.href='joinChoice'">
-											<input class="content_btn01" type="submit" value="가입하기" onclick="joinCheck()">&nbsp;&nbsp;
+											<input class="content_btn01" type="submit" value="가입하기" onclick="e_joinCheck()">&nbsp;&nbsp;
 										</td>
 									</tr>
 								</form>

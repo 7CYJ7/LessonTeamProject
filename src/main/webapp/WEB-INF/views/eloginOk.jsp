@@ -44,8 +44,8 @@
 								<table border="0" cellspacing="0" cellpadding="10">									
 									<tr>
 										<td class="main_text">		
-											${eMemberDto.ename } 님 로그인 하셨습니다. 반갑습니다!<br>
-											${eMemberDto.eid } 님의 가입일은 ${eMemberDto.edate } 입니다.<br><br>											
+											${EMemberDto.ename } 님 로그인 하셨습니다. 반갑습니다!<br>
+											${EMemberDto.eid } 님의 가입일은 ${EMemberDto.edate } 입니다.<br><br>											
 										</td>										
 									</tr>
 									<tr>
