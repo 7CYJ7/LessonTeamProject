@@ -48,10 +48,12 @@
 											${EMemberDto.eid } 님의 가입일은 ${EMemberDto.edate } 입니다.<br><br>											
 										</td>										
 									</tr>
-									<tr>
-										<input class="content_btn01" type="button" value="정보수정" onclick="script:window.location.href='emodify'">
-									</tr>									
 								</table>
+								<table>
+									<tr>										
+										<input class="content_btn02" type="button" value="홈으로" onclick="script:window.location.href='index'">
+									</tr>
+								</table>									
 							</center>
 						</td>
 					</tr>

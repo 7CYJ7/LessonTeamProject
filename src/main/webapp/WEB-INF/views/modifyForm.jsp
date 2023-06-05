@@ -50,7 +50,7 @@
 									
 									<tr>
 										<td class="content_text">휴대전화번호 : </td>
-										<td><input class="inputbox01" type="text" name="mmobile" value="${MemberDto.mmobile }"></td>
+										<td><input class="inputbox01" type="text" name="mmobile" value="${MemberDto.mmobile }" readonly="readonly"></td>
 									</tr>									
 									<tr>
 										<td class="content_text">가 입 일 : </td>

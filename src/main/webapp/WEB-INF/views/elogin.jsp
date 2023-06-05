@@ -40,7 +40,7 @@
 									</tr>
 									<tr>
 										<td colspan="2" align="center">
-											<input class="content_btn01" type="submit" value="로그인">&nbsp;
+											<input class="content_btn02" type="submit" value="로그인"><br><br>
 											<input class="content_btn01" type="button" value="전문가 회원 가입" onclick="script:window.location.href='ejoin'">&nbsp;
 											<input class="content_btn01" type="button" value="일반 회원 가입" onclick="script:window.location.href='join'">
 										</td>										

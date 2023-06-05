@@ -1,3 +1,4 @@
+<%@page import="org.springframework.ui.Model"%>
 <%@page import="com.lesson.project.dao.LDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -19,7 +20,7 @@
 				String sessionId = (String) session.getAttribute("sessionId");
 				if(sessionId == null) {
 			%>
-			<td class="headertext"><a href="login">로그인</a></td>
+			<td class="headertext"><a href="loginChoice">로그인</a></td>
 			<%
 				} else {
 			%>
@@ -33,16 +34,11 @@
 			%>
 			<td class="headertext"><a href="joinChoice">회원가입</a></td>
 			<%
-				}
+				} else {		
 				
-				String mid = request.getParameter("mid");
-				if(sessionId == request.getParameter("mid")) {
 			%>
-			<td class="headertext"><a href="modify">정보수정</a></td>
-			<%
-				} else if(sessionId != request.getParameter("mid")) {
-			%>
-			<td class="headertext"><a href="emodify">정보수정</a></td>
+			<td class="headertext"><a href="modify">회원 정보 수정</a></td>
+			<td class="headertext"><a href="emodify">전문가 정보 수정</a></td>
 			<%
 				}
 			%>

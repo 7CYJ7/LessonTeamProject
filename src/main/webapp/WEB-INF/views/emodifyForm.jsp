@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="/resources/css/title.css">
 <link rel="stylesheet" href="/resources/css/content.css">
 <script type="text/javascript" src="/resources/js/join.js"></script>
-<title>전문가 정보 수정</title>
+<title>레슨모아 전문가 정보 수정</title>
 </head>
 <body>
 	<center>
@@ -37,20 +37,20 @@
 									</tr>
 									<tr>
 										<td class="content_text">비밀번호 : </td>
-										<td><input class="inputbox01" type="password" name="epw"></td>
+										<td><input class="inputbox01" type="password" name="epw" autofocus="autofocus"></td>
 									</tr>
 									<tr>
 										<td class="content_text">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름 : </td>
-										<td><input class="inputbox01" type="text" name="ename" value="${EMemberDto.ename }"></td>
+										<td><input class="inputbox01" type="text" name="ename" value="${EMemberDto.ename }" readonly="readonly"></td>
 									</tr>
 									<tr>
 										<td class="content_text">이 메 일 : </td>
-										<td><input class="inputbox01" type="text" name="eemail" value="${EMemberDto.eemail }"></td>
+										<td><input class="inputbox01" type="text" name="eemail" value="${EMemberDto.eemail }" readonly="readonly"></td>
 									</tr>
 									
 									<tr>
 										<td class="content_text">휴대전화번호 : </td>
-										<td><input class="inputbox01" type="text" name="emobile" value="${EMemberDto.emobile }"></td>
+										<td><input class="inputbox01" type="text" name="emobile" value="${EMemberDto.emobile }" readonly="readonly"></td>
 									</tr>
 									<tr>
 										<td class="content_text">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별 : </td>
@@ -73,7 +73,7 @@
 									</tr>	
 									<tr>
 										<td class="content_text">지&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;역 : </td>
-										<td><input class="inputbox01" type="text" name="earea" value="${EMemberDto.earea }"></td>
+										<td><input class="inputbox01" type="text" name="earea" value="${EMemberDto.earea }" readonly="readonly"></td>
 									</tr>								
 									<tr>
 										<td class="content_text">가 입 일 : </td>
