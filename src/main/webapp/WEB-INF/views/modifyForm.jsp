@@ -33,7 +33,7 @@
 									<form action="modifyOk" method="post" name="join_frm">
 									<tr>
 										<td class="content_text">아 이 디 : </td>
-										<td><input class="inputbox01" type="text" name="mid" value="${memberDto.mid }" readonly="readonly"></td>
+										<td><input class="inputbox01" type="text" name="mid" value="${MemberDto.mid }" readonly="readonly"></td>
 									</tr>
 									<tr>
 										<td class="content_text">비밀번호 : </td>
@@ -41,20 +41,20 @@
 									</tr>
 									<tr>
 										<td class="content_text">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름 : </td>
-										<td><input class="inputbox01" type="text" name="mname" value="${memberDto.mname }"></td>
+										<td><input class="inputbox01" type="text" name="mname" value="${MemberDto.mname }"></td>
 									</tr>
 									<tr>
 										<td class="content_text">이 메 일 : </td>
-										<td><input class="inputbox01" type="text" name="memail" value="${memberDto.memail }"></td>
+										<td><input class="inputbox01" type="text" name="memail" value="${MemberDto.memail }"></td>
 									</tr>
 									
 									<tr>
 										<td class="content_text">휴대전화번호 : </td>
-										<td><input class="inputbox01" type="text" name="mmobile" value="${memberDto.mmobile }"></td>
+										<td><input class="inputbox01" type="text" name="mmobile" value="${MemberDto.mmobile }"></td>
 									</tr>									
 									<tr>
 										<td class="content_text">가 입 일 : </td>
-										<td><input class="inputbox01" type="text" name="mdate" value="${memberDto.mdate }" readonly="readonly"></td>
+										<td><input class="inputbox01" type="text" name="mdate" value="${MemberDto.mdate }" readonly="readonly"></td>
 									</tr>
 									
 									<tr>

@@ -137,8 +137,8 @@ public class controller {
 		
 		if(joinCheck == 1) {
 			model.addAttribute("joinFlag", joinCheck);
-			model.addAttribute("memberName", mname);
-			model.addAttribute("memberId", mid);
+			model.addAttribute("MemberName", mname);
+			model.addAttribute("MemberId", mid);
 		} else { //회원 가입실패
 			model.addAttribute("joinFlag", joinCheck);
 		}

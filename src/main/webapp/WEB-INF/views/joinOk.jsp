@@ -43,8 +43,8 @@
 								<table border="0" cellspacing="0" cellpadding="10">									
 									<tr>
 										<td class="main_text">											
-											${memberName }님 전문가 가입을 축하드립니다!<br>
-											가입하신 아이디는 ${memberId }입니다.<br><br>
+											${MemberName }님 회원 가입을 축하드립니다!<br>
+											가입하신 아이디는 ${MemberId }입니다.<br><br>
 											<input class="content_btn01" type="button" value="로그인 바로가기" onclick="script:window.location.href='login'">
 										</td>										
 									</tr>									
