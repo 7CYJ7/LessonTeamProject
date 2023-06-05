@@ -65,4 +65,9 @@ public class WebController {
 	public String hhh() {
 		return "/include/hhh";
 	}
+	
+	@RequestMapping(value = "/board_write")
+	public String boardwrite() {
+		return "board_write";
+	}
 }

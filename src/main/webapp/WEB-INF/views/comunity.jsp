@@ -58,7 +58,7 @@
         <div id="buttons">
           <div class="col1">◀ 이전 1 다음 ▶</div>
           <div class="col2">
-            <img src="/resources/img/list.png">
+            <a href="comunity"><img src="/resources/img/list.png"></a>
             <a href="board_write"><img src="/resources/img/write.png"></a>
           </div>
         </div>
