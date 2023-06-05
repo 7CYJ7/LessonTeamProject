@@ -37,20 +37,20 @@
 									</tr>
 									<tr>
 										<td class="content_text">비밀번호 : </td>
-										<td><input class="inputbox01" type="password" name="mpw"></td>
+										<td><input class="inputbox01" type="password" name="mpw" autofocus="autofocus"></td>
 									</tr>
 									<tr>
 										<td class="content_text">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름 : </td>
-										<td><input class="inputbox01" type="text" name="mname" value="${MemberDto.mname }"></td>
+										<td><input class="inputbox01" type="text" name="mname" value="${MemberDto.mname }" placeholder="${MemberDto.mname }"></td>
 									</tr>
 									<tr>
 										<td class="content_text">이 메 일 : </td>
-										<td><input class="inputbox01" type="text" name="memail" value="${MemberDto.memail }"></td>
+										<td><input class="inputbox01" type="text" name="memail" value="${MemberDto.memail }" placeholder="${MemberDto.memail }"></td>
 									</tr>
 									
 									<tr>
 										<td class="content_text">휴대전화번호 : </td>
-										<td><input class="inputbox01" type="text" name="mmobile" value="${MemberDto.mmobile }" readonly="readonly"></td>
+										<td><input class="inputbox01" type="text" name="mmobile" value="${MemberDto.mmobile }" placeholder="${MemberDto.mmobile }"></td>
 									</tr>									
 									<tr>
 										<td class="content_text">가 입 일 : </td>

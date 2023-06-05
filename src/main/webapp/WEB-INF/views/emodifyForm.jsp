@@ -41,16 +41,16 @@
 									</tr>
 									<tr>
 										<td class="content_text">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름 : </td>
-										<td><input class="inputbox01" type="text" name="ename" value="${EMemberDto.ename }" readonly="readonly"></td>
+										<td><input class="inputbox01" type="text" name="ename" value="${EMemberDto.ename }" placeholder="${EMemberDto.ename }"></td>
 									</tr>
 									<tr>
 										<td class="content_text">이 메 일 : </td>
-										<td><input class="inputbox01" type="text" name="eemail" value="${EMemberDto.eemail }" readonly="readonly"></td>
+										<td><input class="inputbox01" type="text" name="eemail" value="${EMemberDto.eemail }" placeholder="${EMemberDto.eemail }"></td>
 									</tr>
 									
 									<tr>
 										<td class="content_text">휴대전화번호 : </td>
-										<td><input class="inputbox01" type="text" name="emobile" value="${EMemberDto.emobile }" readonly="readonly"></td>
+										<td><input class="inputbox01" type="text" name="emobile" value="${EMemberDto.emobile }" placeholder="${EMemberDto.emobile }"></td>
 									</tr>
 									<tr>
 										<td class="content_text">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별 : </td>
@@ -73,7 +73,7 @@
 									</tr>	
 									<tr>
 										<td class="content_text">지&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;역 : </td>
-										<td><input class="inputbox01" type="text" name="earea" value="${EMemberDto.earea }" readonly="readonly"></td>
+										<td><input class="inputbox01" type="text" name="earea" value="${EMemberDto.earea }" placeholder="${EMemberDto.earea }"></td>
 									</tr>								
 									<tr>
 										<td class="content_text">가 입 일 : </td>

@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="/resources/css/title.css">
 <link rel="stylesheet" href="/resources/css/content.css">
+<script type="text/javascript" src="/resources/js/join.js"></script>
 <title>레슨모아 회원 정보 수정 완료</title>
 </head>
 <body>
