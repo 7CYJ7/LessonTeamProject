@@ -9,7 +9,7 @@
 <title>레슨모아 전문가 회원 가입 성공</title>
 </head>
 <body>
-	<%
+<%
 		int e_checkId = Integer.parseInt(request.getAttribute("e_checkId").toString());
 	
 		if(e_checkId == 1) {
@@ -45,7 +45,7 @@
 										<td class="main_text02">											
 											${ememberName }님 회원가입을 축하드립니다!<br>
 											가입하신 아이디는 ${ememberId }입니다.<br><br>
-											<input class="content_btn01" type="button" value="로그인 바로가기" onclick="script:window.location.href='login'">
+											<input class="content_btn01" type="button" value="로그인 바로가기" onclick="script:window.location.href='elogin'">
 										</td>										
 									</tr>									
 								</table>

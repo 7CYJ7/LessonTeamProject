@@ -37,11 +37,12 @@
 									<tr>
 										<td class="content_text">비밀번호 : </td>
 										<td><input class="inputbox01" type="password" name="mpw"></td>
-									</tr>
+									</tr>									
 									<tr>
 										<td colspan="2" align="center">
-											<input class="content_btn01" type="submit" value="로그인">&nbsp;&nbsp;
-											<input class="content_btn01" type="button" value="회원가입" onclick="script:window.location.href='join'">
+											<input class="content_btn01" type="submit" value="로그인">&nbsp;
+											<input class="content_btn01" type="button" value="전문가 회원 가입" onclick="script:window.location.href='ejoin'">&nbsp;
+											<input class="content_btn01" type="button" value="일반 회원 가입" onclick="script:window.location.href='join'">
 										</td>										
 									</tr>
 									</form>

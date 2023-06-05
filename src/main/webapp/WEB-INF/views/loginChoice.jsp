@@ -8,7 +8,7 @@
 <title>레슨모아 로그인</title>
 </head>
 <body>
-<center>
+	<center>
 	<table border="0" cellspacing="0" cellpadding="20" width="75%">
 		<tr>
 			<td class="titlebox">
@@ -22,20 +22,21 @@
 		</tr>
 	</center>
 		<table class="content_main" border="0" cellspacing="0" cellpadding="10">
-			<form action="login">
+			<form action="elogin">
 			<tr>
 				<td colspan="2" align="center">
 					<input class="content_btn01" type="button" value="전문가 로그인" onclick="script:window.location.href='elogin'">					
 				</td>										
 			</tr>
+			</form>
+			<form action="login">
 			<tr>
 				<td colspan="2" align="center">
 					<input class="content_btn01" type="button" value="일반 회원 로그인" onclick="script:window.location.href='login'">					
 				</td>										
 			</tr>
 			</form>
-		</table>
-		
+		</table>		
 	</center>
 </body>
 </html>

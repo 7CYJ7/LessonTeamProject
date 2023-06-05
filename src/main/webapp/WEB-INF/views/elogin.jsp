@@ -9,7 +9,7 @@
 <title>레슨모아 전문가 로그인</title>
 </head>
 <body>
-	<center>
+<center>
 	<table border="0" cellspacing="0" cellpadding="20" width="75%">
 		<tr>
 			<td class="titlebox">
@@ -40,8 +40,9 @@
 									</tr>
 									<tr>
 										<td colspan="2" align="center">
-											<input class="content_btn01" type="submit" value="로그인">&nbsp;&nbsp;
-											<input class="content_btn01" type="button" value="회원가입" onclick="script:window.location.href='ejoin'">
+											<input class="content_btn01" type="submit" value="로그인">&nbsp;
+											<input class="content_btn01" type="button" value="전문가 회원 가입" onclick="script:window.location.href='ejoin'">&nbsp;
+											<input class="content_btn01" type="button" value="일반 회원 가입" onclick="script:window.location.href='join'">
 										</td>										
 									</tr>
 									</form>
