@@ -47,7 +47,7 @@
 			<td class="margin02">&nbsp;</td>
 			<td class="headertext"><a href="question">COMMUNITY</a></td>
 			<td class="margin02">&nbsp;</td>
-			<td class="headertext"><a href="contact">Q&A</a></td>
+			<td class="headertext"><a href="questionHome">Q&A</a></td>
 			<td class="margin02">&nbsp;</td>
 		</tr>
 		<tr class="marginline">

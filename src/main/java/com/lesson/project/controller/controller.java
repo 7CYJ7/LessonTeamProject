@@ -248,5 +248,17 @@ public class controller {
 		
 		return "emodifyOk";		
 	}
+	
+	@RequestMapping(value = "questionHome")
+	public String questionHome() {
+		
+		return "questionHome";
+	}
+	
+	@RequestMapping(value = "question_write")
+	public String question_write() {
+		
+		return "question_write";
+	}
 
 }
