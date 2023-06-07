@@ -4,51 +4,15 @@ section#main h2#board_title {
     padding:0 0 5px 0;
 }
 
-section#main #total_search {
-    height:35px;
-    position:relative;
-}
-
-section#main #total {
-    position:absolute;
-    top:10px;
-}
-
-section#main #search {
-    position:absolute;
-    left:460px;
-}
-
 section#main #select_img {
     position:absolute;
     top:10px;
 }
 
-section#main #search_select {
-    position:absolute;
-    top:7px;
-    left:60px;
-}
-
-section#main #search_input {
-    position:absolute;
-    top:7px;
-    left:130px;
-}
-
-section#main #search_input input {
-    width:100px;
-}
-
-
 section#main table {
     border-collapse:collapse;
     margin:0 auto;
-    width:1200px;
-    padding:100px;
-}
-section#main {
-	padding: 50px;
+    width:100%;
 }
 
 section#main tr {
@@ -100,17 +64,21 @@ section#main td a:hover {
 }
 
 section#main #buttons .col1 {
-    text-align:center;
+    float:left;
     margin-left:300px;
 }
 
 section#main #buttons .col2 {
     float:right;
-    margin-right:50px;
+    margin-right:10px;
 }
 
 section#main #buttons {
     margin-top:20px;
 }
 
-
+section#main {
+	width:1200px;
+	margin:0 auto;
+	padding: 20px 0 0 0;
+}

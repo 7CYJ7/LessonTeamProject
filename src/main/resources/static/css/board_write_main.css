@@ -1,6 +1,6 @@
 section#main h2#board_title {
     margin-top:20px;
-    padding:0 0 5px 0;
+    padding:0 0 5px 10px;
 }
 
 section#main div#write_title {
@@ -48,4 +48,9 @@ section#main #content textarea {
 section#main #buttons {
     margin:10px 10px 0 0;
     text-align:right;
+}
+
+section#main {
+	width:1200px;
+	margin:0 auto;
 }

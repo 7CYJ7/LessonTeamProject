@@ -33,7 +33,7 @@
         <h2 id="board_title">자유게시판</h2>
         <div id="write_title"><h2>글쓰기</h2></div>
         <form action="board_writeOk" method="post" enctype="multipart/form-data">
-        <table width="1200px">
+        <table>
           <tr id="name">
             <td class="col1">이름</td>
             <td class="col2"><input type="text" name="bname"></td>
