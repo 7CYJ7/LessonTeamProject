@@ -33,7 +33,7 @@
 								<form action="joinOk" method="post" name="join_frm">
 									<tr>
 										<td class="content_text">아 이 디 : </td>
-										<td><input class="inputbox01" type="text" name="mid" autofocus="autofocus"></td>
+										<td><input class="inputbox01" type="text" name="mid" autofocus="autofocus">&nbsp;&nbsp;&nbsp;</td>
 									</tr>
 									<tr>
 										<td class="content_text">비밀번호 : </td>

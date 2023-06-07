@@ -36,6 +36,13 @@
 				</td>										
 			</tr>
 			</form>
+			<form action="index">
+			<tr>
+				<td colspan="2" align="center">
+					<input class="content_btn01" type="button" value="홈으로" onclick="script:window.location.href='index'">					
+				</td>										
+			</tr>
+			</form>
 		</table>		
 	</center>
 </body>
