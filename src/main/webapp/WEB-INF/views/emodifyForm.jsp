@@ -82,7 +82,7 @@
 									
 									<tr>
 										<td colspan="2" align="center">
-											<input class="content_btn01" type="button" value="수정완료" onclick="e_joinCheck()">&nbsp;&nbsp;
+											<input class="content_btn01" type="submit" value="수정완료" onclick="e_joinCheck()">&nbsp;&nbsp;
 											<input class="content_btn01" type="button" value="수정취소" onclick="script:window.location.href='index'">
 										</td>										
 									</tr>
