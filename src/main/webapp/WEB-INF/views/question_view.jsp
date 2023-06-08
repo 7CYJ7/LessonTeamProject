@@ -5,10 +5,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="/resources/css/question_view.css">
 <title>레슨모아 Q&A</title>
 </head>
 <body>
 	<%@ include file="include/header.jsp" %>
+	<center>
 	<main>
       <section id="main">
         <h2 id="board_title">레슨모아 Q&A</h2>
@@ -20,7 +22,7 @@
           ${boardDto.qcontent }
         </p>
         
-        <p id="file_info">
+        <p id="file_info" >
         	※ 첨부파일 :
         	<a href="/resources/uploadfiles/${fileDto.qfilename }" download>${fileDto.qfileoriname }</a>
         </p>
@@ -46,9 +48,9 @@
         
         <form action="answer_write" method="post">
         <input type="hidden" name="aorinum" value="${boardDto.qnum }">
-        <div id="comment_box">
+        <div id="comment_box"><br>
           <img id="title_comment" src="/resources/img/title_comment.gif">
-          <textarea name="acontent"></textarea>
+          <textarea name="acontent" ></textarea>
           <input type="image" src="/resources/img/ok_answer.gif" id="ok_answer">          
         </div>
         </form>
@@ -59,5 +61,6 @@
         </div>
       </section> <!-- section main 끝 -->
     </main>
+    </center>
 </body>
 </html>
