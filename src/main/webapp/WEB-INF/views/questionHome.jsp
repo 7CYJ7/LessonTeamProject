@@ -60,7 +60,7 @@
 	          <tr>
 	            <td class="col1">${dto.qnum }</td>
 	            <td class="col2">
-	              <a href="question_view?bnum=${dto.qnum }">${dto.qtitle }</a>&nbsp;&nbsp;&nbsp;
+	              <a href="question_view?qnum=${dto.qnum }">${dto.qtitle }</a>&nbsp;&nbsp;&nbsp;
 	              <c:if test="${dto.qanswercount != 0}">
 	              <span style="color:#999999;font-size: 9px;">[${dto.qanswercount }]</span>
 	              </c:if>
@@ -68,7 +68,7 @@
 	              <img width="20" src="/resources/img/file.png">
 	              </c:if>
 	            </td>
-	            <td class="col3">${dto.qname }</td>
+	            <td class="col3">${dto.qid }</td>
 	            <td class="col4"><c:out value="${fn:substring(dto.qdate,0,10) }"></c:out></td>
 	          </tr>
 	          </c:forEach>

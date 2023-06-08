@@ -14,7 +14,7 @@
         <h2 id="board_title">레슨모아 Q&A</h2>
         <div id="view_title_box">
           <span id="boardTitle">${boardDto.qtitle }</span>
-          <span id="info">${boardDto.qname } | ${boardDto.qdate }</span>
+          <span id="info">${boardDto.qid } | ${boardDto.qdate }</span>
         </div>
         <p id="view_content">
           ${boardDto.qcontent }
@@ -53,7 +53,7 @@
         </div>
         </form>
         <div id="buttons">
-          <a href="question_delete?bnum=${boardDto.qnum }"><img src="/resources/img/delete.png"></a>
+          <a href="question_delete?qnum=${boardDto.qnum }"><img src="/resources/img/delete.png"></a>
           <a href="questionHome"><img src="/resources/img/list.png"></a>
           <a href="question_write"><img src="/resources/img/write.png"></a>
         </div>

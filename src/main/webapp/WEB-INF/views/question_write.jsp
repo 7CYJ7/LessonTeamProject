@@ -18,7 +18,7 @@
         <table>
           <tr id="name">
             <td class="col1">아이디</td>
-            <td class="col2"><input type="text" name="qname"></td>
+            <td class="col2"><input type="text" name="qid"></td>
           </tr>
           <tr id="subject">
             <td class="col1">제목</td>
@@ -30,7 +30,7 @@
           </tr>
           <tr id="upload">
             <td class="col1">업로드 파일</td>
-            <td class="col2"><input type="file" name="qfile"></td>
+            <td class="col2"><input type="file" name="files"></td>
           </tr>
         </table>
         <div id="buttons">

@@ -292,16 +292,16 @@ public class controller {
 	@RequestMapping(value = "/question_writeOk")
 	public String question_writeOk(HttpServletRequest request, @RequestPart MultipartFile files) throws IllegalStateException, IOException {
 		
-		String qname = request.getParameter("qname");
+		String qid = request.getParameter("qid");
 		String qtitle = request.getParameter("qtitle");
 		String qcontent = request.getParameter("qcontent");
 		
 		LDao dao = sqlSession.getMapper(LDao.class);
 		
 		if(files.isEmpty()) {//true면 파일이 첨부가 안됨		
-			dao.boardWriteDao(qname, qtitle, qcontent, 0);//파일 첨부 없이 글만 입력
+			dao.boardWriteDao(qid, qtitle, qcontent, 0);//파일 첨부 없이 글만 입력
 		} else {//파일이 첨부된 경우
-			dao.boardWriteDao(qname, qtitle, qcontent, 1);//파일이 첨부된 상태로 글을 쓴 경우
+			dao.boardWriteDao(qid, qtitle, qcontent, 1);//파일이 첨부된 상태로 글을 쓴 경우
 			List<QuestionBoardDto> boardList = dao.boardListDao();//모든 글 목록 가져오기
 			QuestionBoardDto boardDto = boardList.get(0);//방금 쓴 글
 			int qfileinum = boardDto.getQnum();//방금 쓴글의 번호(파일이 첨부된 글의 번호)
@@ -312,7 +312,7 @@ public class controller {
 			//파일의 확장자 가져온 후에 소문자로 변경
 			File destinationFile;
 			String destinationFileName;//실제 서버에 저장된 파일의 변경된 이름이 저장될 변수
-			String qfileurl="C:/springboot_workspace/LessonTeamProject/src/main/resources/static/uploadfiles/";
+			String qfileurl="C:/springboot_workspace/project/LessonTeamProject/src/main/resources/static/uploadfiles/";
 			//첨부된 파일이 저장될 서버의 실제 폴더의 경로
 			
 			do {
