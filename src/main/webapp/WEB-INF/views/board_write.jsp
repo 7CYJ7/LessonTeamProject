@@ -36,15 +36,15 @@
         <table>
           <tr id="name">
             <td class="col1">이름</td>
-            <td class="col2"><input type="text" name="bname"></td>
+            <td class="col2"><input type="text" name="lname"></td>
           </tr>
           <tr id="subject">
             <td class="col1">제목</td>
-            <td class="col2"><input type="text" name="btitle"></td>
+            <td class="col2"><input type="text" name="ltitle"></td>
           </tr>
           <tr id="content">
             <td class="col1">내용</td>
-            <td class="col2"><textarea name="bcontent"></textarea></td>
+            <td class="col2"><textarea name="lcontent"></textarea></td>
           </tr>
         </table>
         <div id="buttons">

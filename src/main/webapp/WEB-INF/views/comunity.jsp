@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,17 +42,17 @@
           </tr>
           <c:forEach items="${list }" var="dto">
           <tr>
-            <td class="col1">${dto.bnum }</td>
+            <td class="col1">${dto.lnum }</td>
             <td class="col2">
-              <a href="board_view?bnum=${dto.bnum }">${dto.btitle }</a>&nbsp;&nbsp;&nbsp;
-              <c:if test="${dto.breplycount != 0}">
-              <span style="color:#999999;font-size: 9px;">[${dto.breplycount }]</span>
+              <a href="comunity_view?lnum=${dto.lnum }">${dto.btitle }</a>&nbsp;&nbsp;&nbsp;
+              <c:if test="${dto.lreplycount != 0}">
+              <span style="color:#999999;font-size: 9px;">[${dto.lreplycount }]</span>
               </c:if>
               
             </td>
-            <td class="col3">${dto.bname }</td>
+            <td class="col3">${dto.lname }</td>
             <td class="col4"></td>
-            <td class="col5">${dto.bhit }</td>
+            <td class="col5">${dto.lhit }</td>
           </tr>
           </c:forEach>
         </table> <!-- 게시판 목록 테이블 끝 -->

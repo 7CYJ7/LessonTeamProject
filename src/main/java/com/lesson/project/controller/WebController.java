@@ -38,10 +38,6 @@ public class WebController {
 	@RequestMapping(value = "/comunity")
 	public String comunity(Model model) {
 		
-		IDao dao = sqlSession.getMapper(IDao.class);
-		model.addAttribute("list", dao.boardListDao());
-		model.addAttribute("totalCount", dao.boardTotalCountDao());		
-		
 		return "comunity";
 	}
 	
