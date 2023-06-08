@@ -60,7 +60,7 @@
 	          <tr>
 	            <td class="col1">${dto.qnum }</td>
 	            <td class="col2">
-	              <a href="board_view?bnum=${dto.qnum }">${dto.qtitle }</a>&nbsp;&nbsp;&nbsp;
+	              <a href="question_view?bnum=${dto.qnum }">${dto.qtitle }</a>&nbsp;&nbsp;&nbsp;
 	              <c:if test="${dto.qanswercount != 0}">
 	              <span style="color:#999999;font-size: 9px;">[${dto.qanswercount }]</span>
 	              </c:if>

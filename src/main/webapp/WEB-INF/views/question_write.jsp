@@ -14,7 +14,7 @@
       <section id="main">
         <h2 id="board_title">레슨모아 Q&A</h2>
         <div id="write_title"><h2>질문하기</h2></div>
-        <form action="board_writeOk" method="post" enctype="multipart/form-data">
+        <form action="question_writeOk" method="post" enctype="multipart/form-data">
         <table>
           <tr id="name">
             <td class="col1">아이디</td>
@@ -35,7 +35,7 @@
         </table>
         <div id="buttons">
           <input type="image" src="/resources/img/ok.png">
-          <a href="board_list"><img src="/resources/img/list.png"></a>
+          <a href="questionHome"><img src="/resources/img/list.png"></a>
         </div>
         </form>
       </section> <!-- section main 끝 -->

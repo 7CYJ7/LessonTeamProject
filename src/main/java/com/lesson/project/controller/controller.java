@@ -326,8 +326,7 @@ public class controller {
 			
 			dao.fileInfoCreateDao(qfileinum, qfileoriname, destinationFileName, qfileextension, qfileurl);
 		}
-		
-		
+				
 		return "redirect:questionHome";
 	}
 	
@@ -350,7 +349,7 @@ public class controller {
 			model.addAttribute("totalCount", dao.boardSearchWriterDao(keyword).size());
 		}
 		
-		return "board_list";
+		return "questionHome";
 	}
 	
 	@RequestMapping(value = "/answer_write")

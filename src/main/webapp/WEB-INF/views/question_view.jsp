@@ -53,9 +53,9 @@
         </div>
         </form>
         <div id="buttons">
-          <a href="board_delete?bnum=${boardDto.qnum }"><img src="/resources/img/delete.png"></a>
-          <a href="board_list"><img src="/resources/img/list.png"></a>
-          <a href="board_write"><img src="/resources/img/write.png"></a>
+          <a href="question_delete?bnum=${boardDto.qnum }"><img src="/resources/img/delete.png"></a>
+          <a href="questionHome"><img src="/resources/img/list.png"></a>
+          <a href="question_write"><img src="/resources/img/write.png"></a>
         </div>
       </section> <!-- section main 끝 -->
     </main>

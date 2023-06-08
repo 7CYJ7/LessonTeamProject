@@ -50,7 +50,7 @@
 		INSERT INTO
 			le_question(qnum, qid, qtitle, qcontent, qanswercount, qfilecount)
 				VALUES
-					(le_seq.nextval, #{param1}, #{param2}, #{param3}, #{param4}, 0, #{param5})
+					(le_seq.nextval, #{param1}, #{param2}, #{param3}, 0, #{param4})
 	</insert>
 	
 	<select id="boardListDao" resultType="com.lesson.project.dto.QuestionBoardDto">
@@ -67,15 +67,15 @@
 	
 	<!-- Q&A 검색 SQL -->
 	<select id="boardSearchTitleDao" resultType="com.lesson.project.dto.QuestionBoardDto">
-		SELECT * FROM le_question WHERE qtitle LIKE '%' || '%' ORDER BY bnum DESC
+		SELECT * FROM le_question WHERE qtitle LIKE '%' || '%' ORDER BY qnum DESC
 	</select>
 	
 	<select id="boardSearchContentDao" resultType="com.lesson.project.dto.QuestionBoardDto">
-		SELECT * FROM le_question WHERE qcontent LIKE '%' || '%' ORDER BY bnum DESC
+		SELECT * FROM le_question WHERE qcontent LIKE '%' || '%' ORDER BY qnum DESC
 	</select>
 	
 	<select id="boardSearchWriterDao" resultType="com.lesson.project.dto.QuestionBoardDto">
-		SELECT * FROM le_question WHERE qname LIKE '%' || '%' ORDER BY bnum DESC
+		SELECT * FROM le_question WHERE qname LIKE '%' || '%' ORDER BY qnum DESC
 	</select>
 	
 	<delete id="boardDeleteDao">
