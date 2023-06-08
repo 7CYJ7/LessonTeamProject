@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class QuestionBoradDto {
+public class QuestionBoardDto {
 	
 	private int qnum; //q&a 글번호(기본키)
 	private String qid; //q&a 글쓴이 아이디
@@ -16,5 +16,5 @@ public class QuestionBoradDto {
 	private int qanswercount; //q&a 답변 개수
 	private int qfilecount; //q&a 첨부된 파일 개수
 	private String qdate; //q&a 등록일
-	
+
 }

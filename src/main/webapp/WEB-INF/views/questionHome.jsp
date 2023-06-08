@@ -24,7 +24,7 @@
 		<form action="index">
 			<tr>
 				<td colspan="2" align="center">
-					<input class="content_btn01" type="button" value="질문하기" onclick="script:window.location.href='question_wirte'">					
+					<input class="content_btn01" type="button" value="질문하기" onclick="script:window.location.href='question_write'">					
 				</td>										
 			</tr>
 		</form>
@@ -32,7 +32,7 @@
 	      <section id="main">
 	        <h2 id="board_title">Q&A</h2>
 	        <div id="total_search">
-	          <div id="total">▷ 총 ${totalCount }개의 게시물이 있습니다.</div>
+	          <div id="total">▷ 총 ${totalCount }개의 질문이 있습니다.</div>
 	          <form action="search_list">
 	          <div id="search">	           
 	            <div id="search_select">
@@ -54,24 +54,22 @@
 	            <th>번호</th>
 	            <th>제목</th>
 	            <th>글쓴이</th>
-	            <th>일시</th>
-	            <th>조회수</th>
+	            <th>등록일</th>	            
 	          </tr>
 	          <c:forEach items="${list }" var="dto">
 	          <tr>
-	            <td class="col1">${dto.bnum }</td>
+	            <td class="col1">${dto.qnum }</td>
 	            <td class="col2">
-	              <a href="board_view?bnum=${dto.bnum }">${dto.btitle }</a>&nbsp;&nbsp;&nbsp;
-	              <c:if test="${dto.breplycount != 0}">
-	              <span style="color:#999999;font-size: 9px;">[${dto.breplycount }]</span>
+	              <a href="board_view?bnum=${dto.qnum }">${dto.qtitle }</a>&nbsp;&nbsp;&nbsp;
+	              <c:if test="${dto.qanswercount != 0}">
+	              <span style="color:#999999;font-size: 9px;">[${dto.qanswercount }]</span>
 	              </c:if>
-	              <c:if test="${dto.bfilecount != 0}">
+	              <c:if test="${dto.qfilecount != 0}">
 	              <img width="20" src="/resources/img/file.png">
 	              </c:if>
 	            </td>
-	            <td class="col3">${dto.bname }</td>
-	            <td class="col4"><c:out value="${fn:substring(dto.bdate,0,10) }"></c:out></td>
-	            <td class="col5">${dto.bhit }</td>
+	            <td class="col3">${dto.qname }</td>
+	            <td class="col4"><c:out value="${fn:substring(dto.qdate,0,10) }"></c:out></td>
 	          </tr>
 	          </c:forEach>
 	        </table> <!-- 게시판 목록 테이블 끝 -->

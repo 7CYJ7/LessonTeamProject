@@ -45,5 +45,81 @@
 		UPDATE le_expert SET epw=#{param2}, ename=#{param3}, eemail=#{param4}, emobile=#{param5}, egender=#{param6}, etype=#{param7}, earea=#{param8} WHERE eid=#{param1}
 	</update>
 	
+	<!-- Q&A 관련 SQL -->
+	<insert id="boardWriteDao">
+		INSERT INTO
+			le_question(qnum, qid, qtitle, qcontent, qanswercount, qfilecount)
+				VALUES
+					(le_seq.nextval, #{param1}, #{param2}, #{param3}, #{param4}, 0, #{param5})
+	</insert>
+	
+	<select id="boardListDao" resultType="com.lesson.project.dto.QuestionBoardDto">
+		SELECT * FROM le_question ORDER BY qnum DESC	
+	</select>
+	
+	<select id="boardTotalCountDao" resultType="int">
+		SELECT COUNT(*) FROM le_question
+	</select>
+	
+	<select id="boardContentViewDao" resultType="com.lesson.project.dto.QuestionBoardDto">
+		SELECT * FROM le_question WHERE qnum=#{param1}
+	</select>
+	
+	<!-- Q&A 검색 SQL -->
+	<select id="boardSearchTitleDao" resultType="com.lesson.project.dto.QuestionBoardDto">
+		SELECT * FROM le_question WHERE qtitle LIKE '%' || '%' ORDER BY bnum DESC
+	</select>
+	
+	<select id="boardSearchContentDao" resultType="com.lesson.project.dto.QuestionBoardDto">
+		SELECT * FROM le_question WHERE qcontent LIKE '%' || '%' ORDER BY bnum DESC
+	</select>
+	
+	<select id="boardSearchWriterDao" resultType="com.lesson.project.dto.QuestionBoardDto">
+		SELECT * FROM le_question WHERE qname LIKE '%' || '%' ORDER BY bnum DESC
+	</select>
+	
+	<delete id="boardDeleteDao">
+		DELETE FROM le_question WHERE qnum=#{param1}
+	</delete>
+	
+		<!-- 댓글 관련 SQL -->
+	<insert id="asnwerWriteDao">
+		INSERT INTO 
+			le_answer(anum, aid, acontent, aorinum) 
+				VALUES (lea_seq.nextval, '운영자', #{param1}, #{param2})
+	</insert>
+	
+	<update id="answerCountDao">
+		UPDATE le_answer SET qanswercount=qanswercount+1 WHERE qnum=#{param1}
+	</update>
+	
+	<select id="answerListDao" resultType="com.lesson.project.dto.AnswerDto">
+		SELECT * FROM le_answer WHERE aorinum=#{param1} ORDER BY anum ASC
+	</select>
+	
+	<delete id="answerDeleteDao">
+		DELETE FROM le_answer WHERE anum=#{param1}
+	</delete>
+	
+	<update id="answerCountMinusDao">
+		UPDATE le_answer SET qanswercount=qanswercount-1 WHERE qnum=#{param1}
+	</update>
+	
+	<!-- file 업로드 관련 SQL -->
+	<insert id="fileInfoCreateDao">
+		INSERT INTO
+			le_qfile(qfilenum, qfileinum, qfileoriname, qfilename, qfileextension, qfileurl)
+				VALUES (lef_seq.nextval, #{param1}, #{param2}, #{param3}, #{param4}, #{param5})
+	</insert>
+	
+	<select id="getFileInfoDao" resultType="com.lesson.project.dto.QFileDto">
+		SELECT * FROM le_qfile WHERE qfileinum=#{param1} 
+	</select>
+	
+	
+	
+	
+	
+	
 	
 </mapper>

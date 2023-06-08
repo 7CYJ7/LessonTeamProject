@@ -4,9 +4,42 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="/resources/css/question_write.css">
+<title>레슨모아 Q&A</title>
 </head>
 <body>
-
+	<%@ include file="include/header.jsp" %>
+	<center>
+	<main>
+      <section id="main">
+        <h2 id="board_title">레슨모아 Q&A</h2>
+        <div id="write_title"><h2>질문하기</h2></div>
+        <form action="board_writeOk" method="post" enctype="multipart/form-data">
+        <table>
+          <tr id="name">
+            <td class="col1">아이디</td>
+            <td class="col2"><input type="text" name="qname"></td>
+          </tr>
+          <tr id="subject">
+            <td class="col1">제목</td>
+            <td class="col2"><input type="text" name="qtitle"></td>
+          </tr>
+          <tr id="content">
+            <td class="col1">내용</td>
+            <td class="col2"><textarea name="qcontent"></textarea></td>
+          </tr>
+          <tr id="upload">
+            <td class="col1">업로드 파일</td>
+            <td class="col2"><input type="file" name="qfile"></td>
+          </tr>
+        </table>
+        <div id="buttons">
+          <input type="image" src="/resources/img/ok.png">
+          <a href="board_list"><img src="/resources/img/list.png"></a>
+        </div>
+        </form>
+      </section> <!-- section main 끝 -->
+    </main>
+    </center>
 </body>
 </html>
