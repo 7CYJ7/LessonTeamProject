@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,14 +45,14 @@
           <tr>
             <td class="col1">${dto.lnum }</td>
             <td class="col2">
-              <a href="comunity_view?lnum=${dto.lnum }">${dto.btitle }</a>&nbsp;&nbsp;&nbsp;
+              <a href="comunity_view?lnum=${dto.lnum }">${dto.ltitle }</a>&nbsp;&nbsp;&nbsp;
               <c:if test="${dto.lreplycount != 0}">
               <span style="color:#999999;font-size: 9px;">[${dto.lreplycount }]</span>
               </c:if>
               
             </td>
             <td class="col3">${dto.lname }</td>
-            <td class="col4"></td>
+            <td class="col4"><c:out value="${fn:substring(dto.ldate,0,10) }"></c:out></td>
             <td class="col5">${dto.lhit }</td>
           </tr>
           </c:forEach>

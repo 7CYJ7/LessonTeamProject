@@ -32,7 +32,6 @@
      
      <main>
       <section id="main">
-        <img src="/resources/img/comm.gif">
         <h2 id="board_title">자유게시판</h2>
         <div id="view_title_box">
           <span id="boardTitle">${boardDto.ltitle }</span>
@@ -48,7 +47,7 @@
         		<td align="center">${replyDto.lrid }</td>
         		<td width="70%">${replyDto.lrcontent }<br><br>${replyDto.lrdate }</td>
         		<td align="center">
-        			<input type="button" value="삭제" onclick="spript:window.location.href='replyDelete?rnum=${replyDto.lrnum}&rorinum=${boardDto.lnum }'">
+        			<input type="button" value="삭제" onclick="spript:window.location.href='replyDelete?lrnum=${replyDto.lrnum}&lrorinum=${boardDto.lnum }'">
         		</td>
         	</tr>
         	</c:forEach>
@@ -56,16 +55,16 @@
         
         
         <form action="reply_write" method="post">
-        <input type="hidden" name="rorinum" value="${boardDto.lnum }">
+        <input type="hidden" name="lrorinum" value="${boardDto.lnum }">
         <div id="comment_box">
           <img id="title_comment" src="/resources/img/title_comment.gif">
-          <textarea name="rcontent"></textarea>
+          <textarea name="lrcontent"></textarea>
           <input type="image" src="/resources/img/ok_ripple.gif" id="ok_ripple">          
         </div>
         </form>
         <div id="buttons">
-          <a href="board_delete?bnum=${boardDto.lnum }"><img src="/resources/img/delete.png"></a>
-          <a href="board_list"><img src="/resources/img/list.png"></a>
+          <a href="board_delete?lnum=${boardDto.lnum }"><img src="/resources/img/delete.png"></a>
+          <a href="comunity"><img src="/resources/img/list.png"></a>
           <a href="board_write"><img src="/resources/img/write.png"></a>
         </div>
       </section> <!-- section main 끝 -->

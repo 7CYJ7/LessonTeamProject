@@ -55,3 +55,9 @@ section#main #buttons {
     text-align:right;
     margin:20px 10px 0 0;
 }
+
+section#main {
+	width:1200px;
+	margin:0 auto;
+	padding: 20px 0 0 0;
+}

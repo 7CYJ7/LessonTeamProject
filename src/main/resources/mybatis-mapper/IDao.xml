@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.lesson.project.dao.IDao">
+
+	<!-- 게시판 관련 SQL -->
+	<insert id="boardWriteDao">
+		INSERT INTO
+			lessonfreeboard(lnum, lname, ltitle, lcontent, lhit, luserid, lreplycount)
+				VALUES
+					(lfb_seq.nextval, #{param1}, #{param2}, #{param3}, 0, #{param4}, 0)
+	</insert>
+	
+	<select id="boardListDao" resultType="com.lesson.project.dto.LMBoardDto">
+		SELECT * FROM lessonfreeboard ORDER BY lnum DESC
+	</select>
+	
+	<select id="boardTotalCountDao" resultType="int">
+		SELECT COUNT(*) FROM lessonfreeboard
+	</select>
+	
+	<select id="boardContentViewDao" resultType="com.lesson.project.dto.LMBoardDto">
+		SELECT * FROM lessonfreeboard WHERE lnum=#{param1}
+	</select>
+	
+	<update id="boardHitDao">
+		UPDATE lessonfreeboard SET lhit=lhit+1 WHERE lnum=#{param1}
+	</update>
+	
+	<!-- 댓글 관련 SQL -->
+	<insert id="replyWriteDao">
+		INSERT INTO 
+			lessonreply(lrnum, lrcontent, lrid, lrorinum) 
+				VALUES (lfr_seq.nextval, #{param1}, '운영자', #{param2})
+	</insert>
+	
+	<update id="replyCountDao">
+		UPDATE lessonfreeboard SET lreplycount=lreplycount+1 WHERE lnum=#{param1}
+	</update>
+	
+	<select id="replyListDao" resultType="com.lesson.project.dto.LMReplyDto">
+		SELECT * FROM lessonreply WHERE lrorinum=#{param1} ORDER BY lrnum ASC
+	</select>
+	
+	<delete id="replyDeleteDao">
+		DELETE FROM lessonreply WHERE lrnum=#{param1}
+	</delete>
+	
+	<update id="replyCountMinusDao">
+		UPDATE lessonfreeboard SET lreplycount=lreplycount-1 WHERE lnum=#{param1}
+	</update>
+
+</mapper>

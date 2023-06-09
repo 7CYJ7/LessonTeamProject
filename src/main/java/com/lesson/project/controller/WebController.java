@@ -38,6 +38,10 @@ public class WebController {
 	@RequestMapping(value = "/comunity")
 	public String comunity(Model model) {
 		
+		IDao dao = sqlSession.getMapper(IDao.class);
+		model.addAttribute("list", dao.boardListDao());
+		model.addAttribute("totalCount", dao.boardTotalCountDao());
+		
 		return "comunity";
 	}
 	
@@ -86,6 +90,20 @@ public class WebController {
 		return "board_write";
 	}
 	
+	@RequestMapping(value = "/comunity_view")
+	public String comunity_view(HttpServletRequest request, Model model) {
+		
+		IDao dao = sqlSession.getMapper(IDao.class);
+		
+		dao.boardHitDao(request.getParameter("lnum")); // 조회수 증가
+		
+		model.addAttribute("boardDto", dao.boardContentViewDao(request.getParameter("lnum")));
+		model.addAttribute("replyList", dao.replyListDao(request.getParameter("lnum")));
+		
+		return "comunity_view";
+		
+	}
+	
 	@RequestMapping(value = "/board_writeOk")
 	public String board_writeOk(HttpServletRequest request) {
 		
@@ -94,8 +112,9 @@ public class WebController {
 		String lcontent = request.getParameter("lcontent");
 		
 		IDao dao = sqlSession.getMapper(IDao.class);
+		dao.boardWriteDao(lname, ltitle, lcontent, "정회원"); //파일 첨부 없이 글만 입력
 		
-		return "redirect:board_list";
+		return "redirect:comunity";
 	}
 	
 	@RequestMapping(value = "/reply_write")
@@ -108,7 +127,7 @@ public class WebController {
 		model.addAttribute("boardDto", dao.boardContentViewDao(request.getParameter("lrorinum")));
 		model.addAttribute("replyList", dao.replyListDao(request.getParameter("lrorinum")));
 		
-		return "comunity";
+		return "comunity_view";
 		
 	}
 	
@@ -135,7 +154,7 @@ public class WebController {
 		
 		model.addAttribute("replyList", dao.replyListDao(request.getParameter("lrorinum")));
 		
-		return "comunity";
+		return "comunity_view";
 	}
 	
 }
