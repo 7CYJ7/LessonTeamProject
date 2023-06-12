@@ -54,9 +54,9 @@
 									</tr>
 									<tr>
 										<td class="content_text">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별 : </td>
-										<td>
-											<input class="inputbox02" type="radio" name="egender" id="남"><span style="font-family: Arial;font-size: 15px;color: #808080;">남</span>
-											<input class="inputbox02" type="radio" name="egender" id="여"><span style="font-family: Arial;font-size: 15px;color: #808080;">여</span>											
+										<td style="font-family: Arial;font-size: 15px;color: #808080;">
+											<input class="inputbox02" type="radio" name="egender" id="남">남
+											<input class="inputbox02" type="radio" name="egender" id="여">여											
 										</td>
 									</tr>
 									<tr>

@@ -45,6 +45,11 @@
 		UPDATE le_expert SET epw=#{param2}, ename=#{param3}, eemail=#{param4}, emobile=#{param5}, egender=#{param6}, etype=#{param7}, earea=#{param8} WHERE eid=#{param1}
 	</update>
 	
+	<!-- 관리자 로그인 -->
+	<select id="admin_checkIdPwDao" resultType="int">
+		SELECT COUNT(*) FROM le_admin WHERE admin_id=#{param1} AND admin_pw=#{param2}
+	</select>
+	
 	<!-- Q&A 관련 SQL -->
 	<insert id="boardWriteDao">
 		INSERT INTO

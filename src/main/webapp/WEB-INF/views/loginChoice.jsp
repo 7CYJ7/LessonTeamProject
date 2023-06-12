@@ -43,6 +43,13 @@
 				</td>										
 			</tr>
 			</form>
+			<form action="admin">
+			<tr>
+				<td colspan="2" align="center">
+					<input class="content_btn01" type="button" value="관리자 로그인" onclick="script:window.location.href='admin_login'">					
+				</td>										
+			</tr>
+			</form>
 		</table>		
 	</center>
 </body>
