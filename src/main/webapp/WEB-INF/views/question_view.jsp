@@ -29,7 +29,7 @@
         <br>
         <c:if test="${fileDto.qfileextension  == 'jpg' or fileDto.qfileextension  == 'png' or fileDto.qfileextension  == 'gif' or fileDto.qfileextension  == 'bmp'}">
         	<br>
-        		<img width="300" src="/resources/uploadfiles/${fileDto.qfilename }">
+        		<img width="100" src="/resources/uploadfiles/${fileDto.qfilename }">
         	<br>
         </c:if>
         
@@ -49,7 +49,7 @@
         <form action="answer_write" method="post">
         <input type="hidden" name="aorinum" value="${boardDto.qnum }">
         <div id="comment_box"><br>
-          <img id="title_comment" src="/resources/img/title_comment.gif">
+          <img id="title_comment" src="/resources/img/title_comment.gif">&nbsp;
           <textarea name="acontent" ></textarea>
           <input type="image" src="/resources/img/ok_answer.gif" id="ok_answer">          
         </div>

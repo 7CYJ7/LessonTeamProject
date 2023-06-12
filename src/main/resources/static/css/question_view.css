@@ -8,10 +8,11 @@ section#main #view_title_box {
     background-color:#eeeeee;
     padding:10px;
     margin-top:10px;
+    width: 50%;
 }
 
 section#main #view_title_box #info {
-    margin-left:250px;
+    margin-left:600px;
 }
 
 section#main #view_title_box #boardTitle {
@@ -20,11 +21,12 @@ section#main #view_title_box #boardTitle {
 }
 
 section#main #view_content {
-    line-height:150%;
+    line-height:400px;
     padding:10px;
 }
 
 section#main #comment_box {
+	width: 50%;
     height:115px;
     background-color:#efefef;
     border-top:solid 1px #cccccc;
@@ -34,24 +36,23 @@ section#main #comment_box {
 section#main #comment_box textarea {
     width:515px;
     height:80px;
-    position:absolute;
     top:15px;
-    left:150px;
+    text-align: center;
 }
 
 section#main #comment_box #title_comment {
-    position:absolute;
+	position:absolute;
     top:15px;
-    left:15px;
+    text-align: center;
 }
 
-section#main #comment_box #ok_ripple {
+section#main #comment_box #ok_answer {
     position:absolute;
     top:15px;
-    left:675px;
+   	text-align: center;
 }
 
 section#main #buttons {
-    text-align:right;
-    margin:20px 10px 0 0;
+    text-align:center;
+    margin:0;
 }

@@ -393,7 +393,4 @@ public class controller {
 		
 		return "question_view";
 	}
-	
-	
-	
 }

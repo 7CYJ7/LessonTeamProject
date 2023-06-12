@@ -83,14 +83,14 @@
 	</delete>
 	
 		<!-- 댓글 관련 SQL -->
-	<insert id="asnwerWriteDao">
+	<insert id="answerWriteDao">
 		INSERT INTO 
 			le_answer(anum, aid, acontent, aorinum) 
 				VALUES (lea_seq.nextval, '운영자', #{param1}, #{param2})
 	</insert>
 	
 	<update id="answerCountDao">
-		UPDATE le_answer SET qanswercount=qanswercount+1 WHERE qnum=#{param1}
+		UPDATE le_question SET qanswercount=qanswercount+1 WHERE qnum=#{param1}
 	</update>
 	
 	<select id="answerListDao" resultType="com.lesson.project.dto.AnswerDto">
@@ -102,7 +102,7 @@
 	</delete>
 	
 	<update id="answerCountMinusDao">
-		UPDATE le_answer SET qanswercount=qanswercount-1 WHERE qnum=#{param1}
+		UPDATE le_question SET qanswercount=qanswercount-1 WHERE qnum=#{param1}
 	</update>
 	
 	<!-- file 업로드 관련 SQL -->
@@ -114,12 +114,6 @@
 	
 	<select id="getFileInfoDao" resultType="com.lesson.project.dto.QFileDto">
 		SELECT * FROM le_qfile WHERE qfileinum=#{param1} 
-	</select>
-	
-	
-	
-	
-	
-	
+	</select>	
 	
 </mapper>
