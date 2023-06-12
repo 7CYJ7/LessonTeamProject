@@ -80,15 +80,15 @@
 	
 	<!-- Q&A 검색 SQL -->
 	<select id="boardSearchTitleDao" resultType="com.lesson.project.dto.QuestionBoardDto">
-		SELECT * FROM le_question WHERE qtitle LIKE '%' || '%' ORDER BY qnum DESC
+		SELECT * FROM le_question WHERE qtitle LIKE '%' || #{param1} || '%' ORDER BY qnum DESC
 	</select>
 	
 	<select id="boardSearchContentDao" resultType="com.lesson.project.dto.QuestionBoardDto">
-		SELECT * FROM le_question WHERE qcontent LIKE '%' || '%' ORDER BY qnum DESC
+		SELECT * FROM le_question WHERE qcontent LIKE '%' || #{param1} || '%' ORDER BY qnum DESC
 	</select>
 	
 	<select id="boardSearchWriterDao" resultType="com.lesson.project.dto.QuestionBoardDto">
-		SELECT * FROM le_question WHERE qname LIKE '%' || '%' ORDER BY qnum DESC
+		SELECT * FROM le_question WHERE qid LIKE '%' || #{param1} || '%' ORDER BY qnum DESC
 	</select>
 	
 	<delete id="boardDeleteDao">
