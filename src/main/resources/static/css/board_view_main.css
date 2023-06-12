@@ -15,13 +15,13 @@ section#main #view_title_box #info {
 }
 
 section#main #view_title_box #boardTitle {
-    font-size:13px;
+    font-size:14px;
     color:green;
 }
 
 section#main #view_content {
     line-height:150%;
-    padding:10px;
+    padding:20px;
 }
 
 section#main #comment_box {

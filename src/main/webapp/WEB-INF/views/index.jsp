@@ -35,8 +35,10 @@
         <section id="bbb">
           <h2></h2>
           <div class="detail2">
-            <img src="resources/img/kim.jpg">
-            <img src="resources/img/pilates.jpg">
+            <img src="resources/img/health.jpg">
+            <img src="resources/img/pilates.png">
+            <img src="resources/img/crossfit.jpg">
+            <img src="resources/img/yoga.jpg">
           </div>
         </section>
       </main>

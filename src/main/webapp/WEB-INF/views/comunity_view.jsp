@@ -35,7 +35,7 @@
         <h2 id="board_title">자유게시판</h2>
         <div id="view_title_box">
           <span id="boardTitle">${boardDto.ltitle }</span>
-          <span id="info">${boardDto.lname } | 조회수 : ${boardDto.lhit } | ${boardDto.ldate }</span>
+          <span id="info">${boardDto.lname } &nbsp;|&nbsp;  조회수 : ${boardDto.lhit } &nbsp;|&nbsp; ${boardDto.ldate }</span>
         </div>
         <p id="view_content">
           ${boardDto.lcontent }

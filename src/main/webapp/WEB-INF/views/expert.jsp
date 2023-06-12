@@ -37,18 +37,28 @@
      		<th>요가</th>
      	</tr>
      	<tr align="center" bgcolor="white">
-     		<td><a href="/include/aaa">AAA</td>
-     		<td><a href="/include/bbb">BBB</td>
-     		<td><a href="/include/ccc">CCC</td>
-     		<td><a href="/include/ddd">DDD</td>
+     		<td><a href="/include/aaa">김종국</td>
+     		<td><a href="/include/bbb">김세은</td>
+     		<td><a href="/include/ccc">박현석</td>
+     		<td><a href="/include/ddd">이가영</td>
      	</tr>
      	<tr align="center" bgcolor="white">
-     		<td><a href="/include/eee">EEE</td>
-     		<td><a href="/include/fff">FFF</td>
-     		<td><a href="/include/ggg">GGG</td>
-     		<td><a href="/include/hhh">HHH</td>
+     		<td><a href="/include/eee">김천호</td>
+     		<td><a href="/include/fff">박수지</td>
+     		<td><a href="/include/ggg">김대희</td>
+     		<td><a href="/include/hhh">최나은</td>
      	</tr>
      </table>
+     <footer>
+        <section id="bottomMenu">
+          <ul>
+            <li><a href="#">회사 소개</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">여행 약관</a></li>
+            <li><a href="#">사이트맵</a></li>
+          </ul>
+        </section>
+      </footer>
      </div>
 </body>
 </html>

@@ -4,9 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="/resources/css/include.css">
 <title>Insert title here</title>
 </head>
 <body>
-	사진넣고 이력넣기
+	<div class=detail>
+		<img src="../resources/img/kim_pilates.jpg">
+	</div>
 </body>
 </html>

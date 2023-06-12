@@ -75,7 +75,9 @@ nav{
 
 
 main > section {
-  margin-top:60px;
+  display: flex;
+  flex-direction: column;
+  min-height: 30px;
 }
 
 main div {
@@ -92,11 +94,11 @@ main div {
 }
 .detail2 > img {
   float:left; 
-  margin-right:50px;
+  margin-right:20px;
   border-radius:20px;
-  width:240px;
-  height:280px;
-  padding:30px;
+  width:280px;
+  height:260px;
+  padding:20px;
 }
 
 
@@ -105,10 +107,13 @@ main div {
 /*   푸터 영역    */
 /******************/
 
-footer{   
+footer{
   width:1200px;   /* 너비 */
   height:100px;  /* 높이 */
   border-top:2px solid #222;
+  
+  
+  
 }
 #bottomMenu{
   width:100%;
