@@ -17,9 +17,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.lesson.project.dto.PageDto;
 import com.lesson.project.dao.LDao;
 import com.lesson.project.dto.MemberDto;
 import com.lesson.project.dto.QuestionBoardDto;
+import com.lesson.project.dto.Criteria;
 import com.lesson.project.dto.EMemberDto;
 
 @Controller
@@ -259,9 +261,29 @@ public class controller {
 	}
 	
 	@RequestMapping(value = "questionHome")
-	public String questionHome(Model model) {
+	public String questionHome(Model model, Criteria criteria, HttpServletRequest request) {
+		
+		int pageNum = 0;
+		
+		if(request.getParameter("pageNum") == null) {		
+			pageNum = 1;
+			criteria.setPageNum(pageNum);
+		} else {
+			pageNum = Integer.parseInt(request.getParameter("pageNum"));
+			criteria.setPageNum(pageNum);
+		}
 		
 		LDao dao = sqlSession.getMapper(LDao.class);
+		
+		int total = dao.boardAllCountDao();//모든 글의 개수
+		
+		PageDto pageDto = new PageDto(criteria, total);
+		
+		List<QuestionBoardDto> boardDtos = dao.questionListDao(criteria.getAmount(), pageNum);
+		
+		model.addAttribute("pageMaker", pageDto);
+		model.addAttribute("boardDtos", boardDtos);
+		model.addAttribute("currPage", pageNum);
 		
 		model.addAttribute("list", dao.boardListDao());
 		model.addAttribute("totalCount", dao.boardTotalCountDao());

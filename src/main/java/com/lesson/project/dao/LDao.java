@@ -31,6 +31,10 @@ public interface LDao {
 	public QuestionBoardDto boardContentViewDao(String qnum); //클릭한 글의 내용보기
 	public void boardDeleteDao(String qnum); //Q&A 글 삭제
 	
+	//Q&A 관리
+	public List<QuestionBoardDto> questionListDao(int amount, int pageNum); //모든 글 목록 가져오기
+	public int boardAllCountDao(); //모든 글의 개수를 반환
+	
 	//Q&A 검색 기능
 	public List<QuestionBoardDto> boardSearchTitleDao(String keyword);//Q&A 제목에서 검색
 	public List<QuestionBoardDto> boardSearchContentDao(String keyword);//Q&A 제목에서 검색

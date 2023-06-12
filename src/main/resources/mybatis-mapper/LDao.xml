@@ -65,6 +65,19 @@
 		SELECT * FROM le_question WHERE qnum=#{param1}
 	</select>
 	
+	<select id="questionListDao" resultType="com.lesson.project.dto.QuestionBoardDto">
+		SELECT * FROM 
+			(SELECT A.*, FLOOR(((ROWNUM-1)/#{param1})+1)PAGE, ROWNUM  
+				FROM 
+					(SELECT * FROM le_question ORDER BY qnum DESC)A)
+						WHERE PAGE=#{param2}
+		 	
+	</select>
+	
+	<select id="boardAllCountDao" resultType="int">
+		SELECT COUNT(*) FROM le_question
+	</select>
+	
 	<!-- Q&A 검색 SQL -->
 	<select id="boardSearchTitleDao" resultType="com.lesson.project.dto.QuestionBoardDto">
 		SELECT * FROM le_question WHERE qtitle LIKE '%' || '%' ORDER BY qnum DESC
