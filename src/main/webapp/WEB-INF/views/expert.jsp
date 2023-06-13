@@ -25,7 +25,7 @@
           </ul>
         </nav>
       </header>
-     </div>
+     
      <div class="ex">
      <table border="1" width="50%" height="200" bgcolor=#11a9c1 bordercolor="white" cellspacing="5" align="center"
      style="margin-left:auto;margin-right:auto;">
@@ -49,6 +49,7 @@
      		<td><a href="/include/hhh">최나은</td>
      	</tr>
      </table>
+     </div>
      <footer>
         <section id="bottomMenu">
           <ul>
@@ -59,6 +60,7 @@
           </ul>
         </section>
       </footer>
-     </div>
+     
+    </div>
 </body>
 </html>

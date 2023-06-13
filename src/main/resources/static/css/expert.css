@@ -3,10 +3,11 @@
 * {
   margin:0;   /* 마진 리셋 */
   padding:0;   /* 패딩 리셋 */
-  box-sizing: border-box;   /* 박스 영역은 테두리까지 */ 
+  box-sizing: border-box;   /* 박스 영역은 테두리까지 */
 }
 a {
-  text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
+  text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */
+  color: inherit;
 }
 ul {
   list-style: none;
@@ -73,6 +74,9 @@ nav{
 	padding:50px;
 	display:flex;
 }
+table {
+	color:blue;
+}
 
 /******************/
 /*   푸터 영역    */
@@ -86,6 +90,7 @@ footer{
   bottom: 0;
   justify-content: center;
   align-items: center;
+  
 }
 #bottomMenu{
   width:100%;

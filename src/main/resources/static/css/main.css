@@ -3,10 +3,11 @@
 * {
   margin:0;   /* 마진 리셋 */
   padding:0;   /* 패딩 리셋 */
-  box-sizing: border-box;   /* 박스 영역은 테두리까지 */ 
+  box-sizing: border-box;   /* 박스 영역은 테두리까지 */
 }
 a {
   text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
+  color: inherit;
 }
 ul {
   list-style: none;
@@ -14,7 +15,7 @@ ul {
 
 #container {
   margin:0 auto;  /* 화면 중앙에 배치 */
-  width:1200px;    /* 너비 */    
+  width:1200px;    /* 너비 */
   background-color: #fff;
 }
 
@@ -56,7 +57,7 @@ nav{
 }
 #topMenu > li {
   float:left;  /* 메뉴 항목을 왼쪽으로 플로팅 */ 
-  position: relative;  
+  position: relative;
 }
 #topMenu > li > a{
   display:block;  /* 링크 텍스트는 블록으로 */ 
