@@ -11,6 +11,12 @@
 <body>
 	<%@ include file="include/header.jsp" %>
 	<center>
+	<c:if test="${sessionId == null }">
+		<script type="text/javascript">
+			alert("로그인 후 이용가능 합니다..");
+			history.go(-1);
+		</script> 
+	</c:if>
 	<main>
       <section id="main">
         <h2 id="board_title">레슨모아 Q&A</h2>

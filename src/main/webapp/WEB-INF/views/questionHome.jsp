@@ -12,7 +12,7 @@
 </head>
 <body>
 	<%@ include file="include/header.jsp" %>
-	<center>
+	<center>		
 		<table border="0" cellspacing="0" cellpadding="20" width="75%">
 			<tr>
 			<td class="titlebox">
@@ -21,13 +21,18 @@
 		</tr>
 		</table>
 		<br>
-		<form action="index">
+		<c:if test="${sessionId != null }">
+		<form action="question_write">
 			<tr>
 				<td colspan="2" align="center">
 					<input class="content_btn01" type="button" value="질문하기" onclick="script:window.location.href='question_write'">					
 				</td>										
 			</tr>
 		</form>
+		</c:if>
+		<c:if test="${sessionId == null }">
+			<input class="content_btn01" type="button" value="로그인 하러가기" onclick="script:window.location.href='loginChoice'">
+		</c:if>
 		<main>
 	      <section id="main">
 	        <h2 id="board_title">Q&A</h2>
@@ -70,7 +75,7 @@
 	            </td>
 	            <td class="col3">${dto.qid }</td>
 	            <td class="col4"><c:out value="${fn:substring(dto.qdate,0,10) }"></c:out></td>
-	          </tr>
+	          </tr>          
 	          </c:forEach>
 	        </table> <!-- 게시판 목록 테이블 끝 -->
 			<tr>
