@@ -13,6 +13,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.multipart.MultipartFile;
@@ -23,6 +24,7 @@ import com.lesson.project.dto.MemberDto;
 import com.lesson.project.dto.QuestionBoardDto;
 import com.lesson.project.dto.Criteria;
 import com.lesson.project.dto.EMemberDto;
+import com.lesson.project.dto.AdminDto;
 
 @Controller
 public class controller {
@@ -288,13 +290,13 @@ public class controller {
 		model.addAttribute("list", dao.boardListDao());
 		model.addAttribute("totalCount", dao.boardTotalCountDao());
 		
-		return "questionHome";
+		return "questionHome";		
 	}
 	
 	@RequestMapping(value = "question_write")
 	public String question_write() {
 		
-		return "question_write";
+		return "question_write";		
 	}
 
 	@RequestMapping(value = "/question_view")
@@ -415,4 +417,33 @@ public class controller {
 		
 		return "question_view";
 	}
+	
+	@RequestMapping(value = "/admin_login")
+	public String admin_login() {
+		
+		return "admin_login";
+	}
+	
+	@RequestMapping(value = "/admin_loginOk")
+	public String admin_loginOk(HttpServletRequest request, Model model, HttpSession session) {
+		
+		String adminId = request.getParameter("adminId");
+		String adminPw = request.getParameter("adminPw");
+		
+		LDao dao = sqlSession.getMapper(LDao.class);
+		
+		int admin_checkIdPwFlag = dao.admin_checkIdPwDao(adminId, adminPw);
+		//1이면 로그인 성공, 0이면 로그인 실패
+		
+		model.addAttribute("admin_checkIdPwFlag", admin_checkIdPwFlag);
+		
+		if(admin_checkIdPwFlag == 1) {//로그인 성공 실행
+			session.setAttribute("sessionId", adminId);						
+			
+			model.addAttribute("AdminDto", dao.admin_getMemberInfo(adminId));
+		}
+		
+		return "admin_loginOk";
+	}
+
 }

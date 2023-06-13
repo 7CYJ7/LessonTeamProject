@@ -45,20 +45,22 @@
         	</c:forEach>
         </table>
         
-        
+                
         <form action="answer_write" method="post">
+        <c:if test="${sessionId == 'admin' }">
         <input type="hidden" name="aorinum" value="${boardDto.qnum }">
         <div id="comment_box"><br>
           <img id="title_comment" src="/resources/img/title_comment.gif">&nbsp;
           <textarea name="acontent" ></textarea>
           <input type="image" src="/resources/img/ok_answer.gif" id="ok_answer">          
         </div>
-        </form>
+        </form>        
         <div id="buttons">
           <a href="question_delete?qnum=${boardDto.qnum }"><img src="/resources/img/delete.png"></a>
           <a href="questionHome"><img src="/resources/img/list.png"></a>
           <a href="question_write"><img src="/resources/img/write.png"></a>
         </div>
+        </c:if>
       </section> <!-- section main 끝 -->
     </main>
     </center>

@@ -27,11 +27,11 @@
 									<form action="admin_loginOk" method="post">
 									<tr>
 										<td class="content_text">아 이 디 : </td>
-										<td><input class="inputbox01" type="text" name="admin_id"></td>
+										<td><input class="inputbox01" type="text" name="adminId"></td>
 									</tr>
 									<tr>
 										<td class="content_text">비밀번호 : </td>
-										<td><input class="inputbox01" type="password" name="admin_pw"></td>
+										<td><input class="inputbox01" type="password" name="adminPw"></td>
 									</tr>									
 									<tr>
 										<td colspan="2" align="center">

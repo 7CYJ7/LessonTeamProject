@@ -39,14 +39,13 @@
 								<table border="0" cellspacing="0" cellpadding="10">									
 									<tr>
 										<td class="main_text">
-											${AdminDto.admin_id } 님 관리자 로그인 하셨습니다.<br>									
+											${AdminDto.adminId } 님 관리자 로그인 하셨습니다.<br>									
 										</td>										
 									</tr>
 									</table>
 									<table>
 									<tr>										
-										<input class="content_btn02" type="button" value="홈으로" onclick="script:window.location.href='index'">
-										<input class="content_btn02" type="button" value="관리자 화면" onclick="script:window.location.href='admin_index'">
+										<input class="content_btn02" type="button" value="홈으로" onclick="script:window.location.href='index'">										
 									</tr>																		
 								</table>
 							</center>

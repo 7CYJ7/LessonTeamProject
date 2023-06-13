@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class AdminDto {
 	
-	private String admin_id; //관리자 아이디
-	private String admin_pw; //관리자 비밀번호
+	private String adminId; //관리자 아이디
+	private String adminPw; //관리자 비밀번호
 
 }

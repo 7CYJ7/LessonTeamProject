@@ -2,6 +2,7 @@ package com.lesson.project.dao;
 
 import java.util.List;
 
+import com.lesson.project.dto.AdminDto;
 import com.lesson.project.dto.AnswerDto;
 import com.lesson.project.dto.EMemberDto;
 import com.lesson.project.dto.MemberDto;
@@ -50,6 +51,11 @@ public interface LDao {
 	//파일 첨부 관련 기능
 	public void fileInfoCreateDao(int qfileinum, String qfileoriname, String qfilename, String qfileextension, String qfileurl);
 	public QFileDto getFileInfoDao(String qfileinum);//파일이 첨부된 글의 번호로 검색하여 파일정보 가져오기
+	
+	//관리자
+	public int admin_checkIdDao(String admin_id); //가입하려는 id의 존재여부 체크
+	public int admin_checkIdPwDao(String admin_id, String admin_pw); //아이디와 비밀번호의 일치여부 체크
+	public AdminDto admin_getMemberInfo(String admin_id); //관리자 아이디로 조회하여 회원 정보 모두 가져오기
 	
 	
 }
