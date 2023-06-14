@@ -42,7 +42,7 @@
           </div>
         </section>
       </main>
-      <footer>
+      <footer>3
         <section id="bottomMenu">
           <ul>
             <li><a href="#">회사 소개</a></li>

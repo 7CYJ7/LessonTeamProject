@@ -1,7 +1,39 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
 
 .pic > img {
   width:300px;
-  margin:20px 0 0 0;
+  margin:30px 50px 0 0;
   position:relative;
+  float:left;
 }
+
+.content {
+	margin:50px 0 0 0;
+	list-style-type:disc;
+	line-height:35px;
+}
+
+
+button {
+    margin: 20px;
+}
+
+.w-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "paybooc-Light", sans-serif;
+    font-weight: 600;
+    font-size:15px;
+    cursor: pointer;
+}
+
+
+.w-btn-blue {
+    background-color: #6aafe6;
+    color: #d4dfe6;
+}
+
+

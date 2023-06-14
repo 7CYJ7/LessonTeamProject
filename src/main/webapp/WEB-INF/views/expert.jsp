@@ -29,7 +29,7 @@
      <div class="ex">
      <table border="1" width="50%" height="200" bgcolor=#11a9c1 bordercolor="white" cellspacing="5" align="center"
      style="margin-left:auto;margin-right:auto;">
-     	<tr align="center" bgcolor="white">
+     	<tr align="center" bgcolor="white" class="ex2">
      		<td rowspan="3" text><b>전문가</b></td>
      		<th>헬스</th>
      		<th>필라테스</th>
@@ -45,7 +45,7 @@
      	<tr align="center" bgcolor="white">
      		<td><a href="/include/eee">김천호</td>
      		<td><a href="/include/fff">박수지</td>
-     		<td><a href="/include/ggg">김대희</td>
+     		<td><a href="/include/ggg">KEVIN</td>
      		<td><a href="/include/hhh">최나은</td>
      	</tr>
      </table>
