@@ -53,7 +53,7 @@
         
                 
         <form action="answer_write" method="post">
-        <c:if test="${sessionId == 'admin' }">
+        <c:if test="${sessionId == 'admin7' || sessionId == 'admin11' }">
         <input type="hidden" name="aorinum" value="${boardDto.qnum }">
         <div id="comment_box"><br>
           <img id="title_comment" src="/resources/img/title_comment.gif">&nbsp;
