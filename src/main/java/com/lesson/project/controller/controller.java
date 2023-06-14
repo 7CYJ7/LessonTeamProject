@@ -290,7 +290,7 @@ public class controller {
 		model.addAttribute("boardDtos", boardDtos);
 		model.addAttribute("currPage", pageNum);
 		
-		model.addAttribute("list", dao.boardListDao());
+		model.addAttribute("list", boardDtos);
 		model.addAttribute("totalCount", dao.boardTotalCountDao());
 		
 		return "questionHome";		
