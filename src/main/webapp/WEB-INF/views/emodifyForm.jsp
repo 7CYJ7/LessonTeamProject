@@ -10,6 +10,7 @@
 <title>레슨모아 전문가 정보 수정</title>
 </head>
 <body>
+	<%@ include file="include/header.jsp" %>
 	<center>
 	<table border="0" cellspacing="0" cellpadding="20" width="75%">
 		<tr>
@@ -55,8 +56,8 @@
 									<tr>
 										<td class="content_text">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별 : </td>
 										<td style="font-family: Arial;font-size: 15px;color: #808080;">
-											<input class="inputbox02" type="radio" name="egender" id="남">남
-											<input class="inputbox02" type="radio" name="egender" id="여">여											
+											<input class="inputbox02" type="radio" name="egender" id="egender" value="남">남
+											<input class="inputbox02" type="radio" name="egender" id="egender" value="여">여											
 										</td>
 									</tr>
 									<tr>

@@ -33,29 +33,29 @@
 								<form action="ejoinOk" method="post" name="e_join_frm">
 									<tr>
 										<td class="content_text">아 이 디 : </td>
-										<td><input class="inputbox01" type="text" name="eid" autofocus="autofocus"></td>
+										<td><input class="inputbox01" type="text" name="eid" autofocus="autofocus" placeholder="아이디를 입력해 주세요."></td>
 									</tr>
 									<tr>
 										<td class="content_text">비밀번호 : </td>
-										<td><input  class="inputbox01" type="password" name="epw" placeholder="문자+숫자 포함 8자리 이상"></td>
+										<td><input  class="inputbox01" type="password" name="epw" placeholder="비밀번호 4~12자리 입력해 주세요."></td>
 									</tr>
 									<tr>
 										<td class="content_text">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름 : </td>
-										<td><input class="inputbox01" type="text" name="ename"></td>
+										<td><input class="inputbox01" type="text" name="ename" placeholder="이름을 입력해 주세요."></td>
 									</tr>
 									<tr>
 										<td class="content_text">이 메 일 : </td>
-										<td><input class="inputbox01" type="text" name="eemail"></td>
+										<td><input class="inputbox01" type="text" name="eemail" placeholder="abc@abc.com"></td>
 									</tr>
 									<tr>
 										<td class="content_text">휴대전화번호 : </td>
-										<td><input class="inputbox01" type="text" name="emobile" placeholder="'-'빼고 입력"></td>
+										<td><input class="inputbox01" type="text" name="emobile" placeholder="01012345678"></td>
 									</tr>
 										<tr>
 										<td class="content_text">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별 : </td>
 										<td style="font-family: Arial;font-size: 15px;color: #808080;">
-											<input class="inputbox02" type="radio" name="egender" id="남">남
-											<input class="inputbox02" type="radio" name="egender" id="여">여
+											<input class="inputbox02" type="radio" name="egender" id="egender" value="남">남
+											<input class="inputbox02" type="radio" name="egender" id="egender" value="여">여
 										</td>
 									</tr>
 										<tr>
@@ -72,7 +72,7 @@
 									</tr>
 									<tr>
 										<td class="content_text">지&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;역 : </td>
-										<td><input class="inputbox01" type="text" name="earea" placeholder="주소(지역 구까지 입력)"></td>
+										<td><input class="inputbox01" type="text" name="earea" placeholder="주소(지역 구까지 입력해 주세요.)"></td>
 									</tr>
 									<tr>
 										<td colspan="2" align="center">

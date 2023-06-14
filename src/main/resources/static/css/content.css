@@ -38,6 +38,12 @@ input.inputbox01 {
 	padding: 5px;
 }
 
+input.inputbox01::placeholder {
+	font-size: 15px;
+	color: #808080;
+	font-style: Arial;
+}
+
 input.inputbox02 {
 	border: 1px solid #c0c0c0;
 	background-color: #ffffff;

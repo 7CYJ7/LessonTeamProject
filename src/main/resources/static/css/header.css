@@ -15,9 +15,12 @@ td.headertext {
 	font-size: 15px;
 	font-family: Arial;
 	text-align: center;
-	color: #ffffff;
-	width: 3%;
+	color: #ffffff;	
+	display: inline-block; 	 
+	white-space: nowrap;
+	margin-top: 12px;
 }
+
 td.margin01 {
 	width: 65%;
 }

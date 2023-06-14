@@ -33,23 +33,23 @@
 								<form action="joinOk" method="post" name="join_frm">
 									<tr>
 										<td class="content_text">아 이 디 : </td>
-										<td><input class="inputbox01" type="text" name="mid" autofocus="autofocus">&nbsp;&nbsp;&nbsp;</td>
+										<td><input class="inputbox01" type="text" name="mid" autofocus="autofocus" placeholder="아이디를 입력해 주세요.">&nbsp;&nbsp;&nbsp;</td>
 									</tr>
 									<tr>
 										<td class="content_text">비밀번호 : </td>
-										<td><input  class="inputbox01" type="password" name="mpw" placeholder="문자 + 숫자 포함 8자리 이상"></td>
+										<td><input  class="inputbox01" type="password" name="mpw" placeholder="비밀번호 4~12자리 입력해 주세요."></td>
 									</tr>
 									<tr>
 										<td class="content_text">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름 : </td>
-										<td><input class="inputbox01" type="text" name="mname"></td>
+										<td><input class="inputbox01" type="text" name="mname" placeholder="이름을 입력해 주세요."></td>
 									</tr>
 									<tr>
 										<td class="content_text">이 메 일 : </td>
-										<td><input class="inputbox01" type="text" name="memail"></td>
+										<td><input class="inputbox01" type="text" name="memail" placeholder="abc@abc.com"></td>
 									</tr>
 									<tr>
 										<td class="content_text">휴대전화번호 : </td>
-										<td><input class="inputbox01" type="text" name="mmobile" placeholder="'-' 빼고 입력"></td>
+										<td><input class="inputbox01" type="text" name="mmobile" placeholder="01012345678"></td>
 									</tr>
 									<br>
 									<tr>

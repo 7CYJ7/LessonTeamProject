@@ -14,7 +14,7 @@
 	<table border="0" cellspacing="0" cellpadding="" width="100%">
 		<tr class="headerline">
 			<td class="margin01">&nbsp;</td>
-			<td class="headertext"><a href="index">레슨모아</a></td>
+			<td class="headertext"><a href="index">HOME</a></td>
 			<td class="margin02">&nbsp;</td>
 			<%
 				String sessionId = (String) session.getAttribute("sessionId");
@@ -38,6 +38,7 @@
 				
 			%>
 			<td class="headertext"><a href="modify">회원 정보 수정</a></td>
+			<td class="margin02">&nbsp;</td>
 			<td class="headertext"><a href="emodify">전문가 정보 수정</a></td>
 			<%
 				}
