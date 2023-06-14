@@ -411,6 +411,8 @@ public class controller {
 		model.addAttribute("boardDto", dao.boardContentViewDao(request.getParameter("aorinum")));
 		
 		model.addAttribute("answerList", dao.answerListDao(request.getParameter("aorinum")));
+		
+		model.addAttribute("fileDto", dao.getFileInfoDao(request.getParameter("aorinum")));
 				
 		return "question_view";
 	}
