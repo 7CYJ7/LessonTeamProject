@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestPart;
 
 import com.lesson.project.dao.IDao;
-import com.lesson.project.dto.Criteria;
+import com.lesson.project.dto.LMCriteria;
 import com.lesson.project.dto.LMBoardDto;
-import com.lesson.project.dto.PageDto;
+import com.lesson.project.dto.LMPageDto;
 
 @Controller
 public class WebController {
@@ -38,7 +38,7 @@ public class WebController {
 	}
 	
 	@RequestMapping(value = "/comunity")
-	public String comunity(Model model, Criteria criteria, HttpServletRequest request) {
+	public String comunity(Model model, LMCriteria criteria, HttpServletRequest request) {
 		
 		int pageNum = 0;
 		
@@ -54,7 +54,7 @@ public class WebController {
 		
 		int total = dao.boardAllCountDao(); // 모든 글의 개수
 		
-		PageDto pageDto = new PageDto(criteria, total);
+		LMPageDto pageDto = new LMPageDto(criteria, total);
 		
 		List<LMBoardDto> boardDtos = dao.questionListDao(criteria.getAmount(), pageNum);
 		

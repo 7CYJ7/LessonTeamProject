@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class PageDto {
+public class LMPageDto {
 	
 	private int startPage; // 현재 화면에서 보여질 시작 페이지 번호
 	private int endPage; // 현재 화면에서 보여질 마지막 페이지 번호
@@ -15,9 +15,9 @@ public class PageDto {
 	private boolean next; // 더 이상 페이지가 있는지의 여부
 	private int total; // 전체 페이지 개수(전체글의수 /(나누기) 한페이지당 보여줄 글의 개수 = 반올림한 값)
 	
-	private Criteria criteria;
+	private LMCriteria criteria;
 	
-	public PageDto(Criteria criteria, int total) {
+	public LMPageDto(LMCriteria criteria, int total) {
 		
 		this.criteria = criteria;
 		this.total = total;

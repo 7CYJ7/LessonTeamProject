@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Criteria {
+public class LMCriteria {
 	
 	private int pageNum=1;
 	private int amount=10;
