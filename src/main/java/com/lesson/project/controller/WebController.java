@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestPart;
 
 import com.lesson.project.dao.IDao;
+import com.lesson.project.dto.Criteria;
 import com.lesson.project.dto.LMBoardDto;
+import com.lesson.project.dto.PageDto;
 
 @Controller
 public class WebController {
@@ -36,11 +38,29 @@ public class WebController {
 	}
 	
 	@RequestMapping(value = "/comunity")
-	public String comunity(Model model) {
+	public String comunity(Model model, Criteria criteria, HttpServletRequest request) {
+		
+		int pageNum = 0;
+		
+		if(request.getParameter("pageNum") == null) {		
+			pageNum = 1;
+			criteria.setPageNum(pageNum);
+		} else {
+			pageNum = Integer.parseInt(request.getParameter("pageNum"));
+			criteria.setPageNum(pageNum);
+		}
 		
 		IDao dao = sqlSession.getMapper(IDao.class);
-		model.addAttribute("list", dao.boardListDao());
-		model.addAttribute("totalCount", dao.boardTotalCountDao());
+		
+		int total = dao.boardAllCountDao(); // 모든 글의 개수
+		
+		PageDto pageDto = new PageDto(criteria, total);
+		
+		List<LMBoardDto> boardDtos = dao.questionListDao(criteria.getAmount(), pageNum);
+		
+		model.addAttribute("pageMaker", pageDto);
+		model.addAttribute("boardDtos", boardDtos);
+		model.addAttribute("currPage", pageNum);
 		
 		return "comunity";
 	}

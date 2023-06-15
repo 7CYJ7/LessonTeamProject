@@ -27,11 +27,10 @@
       </header>
      
      <div class="ex">
-     <table border="1" width="50%" height="200" bgcolor=#11a9c1 bordercolor="white" cellspacing="5" align="center"
+     <table border="1" width="60%" height="300" bgcolor=#11a9c1 bordercolor="white" cellspacing="5" align="center"
      style="margin-left:auto;margin-right:auto;">
      	<tr align="center" bgcolor="white" class="ex2">
-     		<td rowspan="3" text><b>전문가</b></td>
-     		<th>헬스</th>
+     		<th>퍼스널 트레이닝(PT)</th>
      		<th>필라테스</th>
      		<th>크로스핏</th>
      		<th>요가</th>
@@ -47,6 +46,18 @@
      		<td><a href="/include/fff">박수지</td>
      		<td><a href="/include/ggg">KEVIN</td>
      		<td><a href="/include/hhh">최나은</td>
+     	</tr>
+     	<tr align="center" bgcolor="white">
+     		<td>A</td>
+     		<td>B</td>
+     		<td>C</td>
+     		<td>D</td>
+     	</tr>
+     	<tr align="center" bgcolor="white">
+     		<td>E</td>
+     		<td>F</td>
+     		<td>G</td>
+     		<td>H</td>
      	</tr>
      </table>
      </div>
