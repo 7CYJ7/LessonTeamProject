@@ -57,5 +57,4 @@ public interface LDao {
 	public int admin_checkIdPwDao(String admin_id, String admin_pw); //아이디와 비밀번호의 일치여부 체크
 	public AdminDto admin_getMemberInfo(String admin_id); //관리자 아이디로 조회하여 회원 정보 모두 가져오기
 	
-	
 }

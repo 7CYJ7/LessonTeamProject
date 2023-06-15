@@ -44,7 +44,7 @@
 				}
 			%>
 			<td class="margin02">&nbsp;</td>
-			<td class="headertext"><a href="profile">PROFILE</a></td>
+			<td class="headertext"><a href="expertChoice">EXPERT</a></td>
 			<td class="margin02">&nbsp;</td>
 			<td class="headertext"><a href="question">COMMUNITY</a></td>
 			<td class="margin02">&nbsp;</td>
