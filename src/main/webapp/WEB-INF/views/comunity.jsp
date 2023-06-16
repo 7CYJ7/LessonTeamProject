@@ -63,21 +63,21 @@
           	<tr>
 				<td colspan="5" align="center">
 					<c:if test="${pageMaker.prev}">
-						<a href="list?pageNum=${pageMaker.startPage-5 }">◀</a>&nbsp;&nbsp;&nbsp;
+						<a href="comunity?pageNum=${pageMaker.startPage-5 }">◀</a>&nbsp;&nbsp;&nbsp;
 					</c:if>
 					<c:forEach begin="${pageMaker.startPage}" end="${pageMaker.endPage}" var="num">
 						<c:choose>
 							<c:when test="${currPage == num }">
-								<span style="color:#FFFFFF;background-color: blue;;font-weight: bold;">${num}</span>&nbsp;&nbsp;&nbsp;
+								<span style="color:black;font-weight: bold;">${num}</span>&nbsp;&nbsp;&nbsp;
 							</c:when>
 							<c:otherwise>													
-								<a href="list?pageNum=${num }">${num }</a>&nbsp;&nbsp;&nbsp;
+								<a href="comunity?pageNum=${num }">${num }</a>&nbsp;&nbsp;&nbsp;
 							</c:otherwise>
 						</c:choose>
 						
 					</c:forEach>
 					<c:if test="${pageMaker.next}">
-						<a href="list?pageNum=${pageMaker.startPage+5 }">▶</a>
+						<a href="comunity?pageNum=${pageMaker.startPage+5 }">▶</a>
 					</c:if>
 				</td>
 			</tr>

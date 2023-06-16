@@ -4,13 +4,18 @@
 
 .pic > img {
   width:300px;
-  margin:30px 50px 0 0;
+  margin:20px 50px 0 0;
   position:relative;
   float:left;
 }
+p {
+	font-size:20px;
+	padding:20px 0 0 0;
+	font-wehight: 600;
+}
 
-.content {
-	margin:50px 0 0 0;
+.text {
+	margin:40px 0 0 0;
 	list-style-type:disc;
 	line-height:35px;
 }
@@ -21,7 +26,7 @@ button {
 }
 
 .w-btn {
-    display: inline-block;
+    display: inline-block; 
     padding: 15px 30px;
     border-radius: 15px;
     font-family: "paybooc-Light", sans-serif;

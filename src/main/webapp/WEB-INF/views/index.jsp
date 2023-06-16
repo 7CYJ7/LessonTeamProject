@@ -26,6 +26,7 @@
           </ul>
         </nav>
       </header>
+      
       <main class="contens">
         <section id="aaa">
           <div class="detail">
@@ -42,7 +43,7 @@
           </div>
         </section>
       </main>
-      <footer>3
+      <footer>
         <section id="bottomMenu">
           <ul>
             <li><a href="#">회사 소개</a></li>

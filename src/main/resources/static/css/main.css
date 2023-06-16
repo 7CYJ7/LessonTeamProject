@@ -89,7 +89,7 @@ main div {
 .detail > img {
   float:left; 
   margin-right:50px;
-  border-radius:20px;
+  border-radius:20px; 
   width:1200px;
   height:500px;
 }

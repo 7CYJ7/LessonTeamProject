@@ -73,18 +73,9 @@ nav{
 
 /* 본문시작 */
 
-.ex {
-	padding:100px;
-	display:flex;
-}
-.ex2 {
-	color:rgb(140,140,140);
-	font-size:20px;
-	}
-table {
-	color:black;
-	font-weight:600;
-	table-layout: fixed;
+.container2 {
+	width:1000px;
+	height:400px;
 }
 
 /******************/
@@ -95,10 +86,7 @@ footer{
   width:1200px;   /* 너비 */
   height:100px;  /* 높이 */
   border-top:2px solid #222;
-  position: fixed;
-  bottom: 0;
-  justify-content: center;
-  align-items: center;
+  
   
 }
 #bottomMenu{

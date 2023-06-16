@@ -62,48 +62,33 @@ public class WebController {
 		model.addAttribute("boardDtos", boardDtos);
 		model.addAttribute("currPage", pageNum);
 		
+		model.addAttribute("list", boardDtos);
+		model.addAttribute("totalCount", dao.boardTotalCountDao());
+		
 		return "comunity";
 	}
 	
-	@RequestMapping(value = "/include/aaa")
-	public String aaa() {
-		return "/include/aaa";
+	@RequestMapping(value = "/pt")
+	public String pt() {
+		return "pt";
 	}
 	
-	@RequestMapping(value = "/include/bbb")
-	public String bbb() {
-		return "/include/bbb";
+	@RequestMapping(value = "/pilates")
+	public String pilates() {
+		return "pilates";
 	}
 	
-	@RequestMapping(value = "/include/ccc")
-	public String ccc() {
-		return "/include/ccc";
+	@RequestMapping(value = "/crossfit")
+	public String crossfit() {
+		return "crossfit";
 	}
 	
-	@RequestMapping(value = "/include/ddd")
-	public String ddd() {
-		return "/include/ddd";
+	@RequestMapping(value = "/yoga")
+	public String yoga() {
+		return "yoga";
 	}
 	
-	@RequestMapping(value = "/include/eee")
-	public String eee() {
-		return "/include/eee";
-	}
 	
-	@RequestMapping(value = "/include/fff")
-	public String fff() {
-		return "/include/fff";
-	}
-	
-	@RequestMapping(value = "/include/ggg")
-	public String ggg() {
-		return "/include/ggg";
-	}
-	
-	@RequestMapping(value = "/include/hhh")
-	public String hhh() {
-		return "/include/hhh";
-	}
 	
 	@RequestMapping(value = "/board_write")
 	public String boardwrite() {

@@ -30,6 +30,22 @@
 		UPDATE lessonfreeboard SET lhit=lhit+1 WHERE lnum=#{param1}
 	</update>
 	
+	<select id="boardAllCountDao" resultType="int">
+		SELECT COUNT(*) FROM lessonfreeboard
+	</select>
+	
+	<select id="questionListDao" resultType="com.lesson.project.dto.LMBoardDto">
+		SELECT * FROM 
+			(SELECT A.*, FLOOR((ROWNUM-1)/#{param1}+1)PAGE, ROWNUM  
+				FROM 
+					(SELECT * FROM lessonfreeboard ORDER BY lnum DESC)A)
+						WHERE PAGE=#{param2}
+	</select>
+	
+	<delete id="boardDeleteDao">
+		DELETE FROM lessonfreeboard WHERE lnum=#{param1}
+	</delete>
+	
 	<!-- 댓글 관련 SQL -->
 	<insert id="replyWriteDao">
 		INSERT INTO 

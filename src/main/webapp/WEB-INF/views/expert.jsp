@@ -27,37 +27,37 @@
       </header>
      
      <div class="ex">
-     <table border="1" width="60%" height="300" bgcolor=#11a9c1 bordercolor="white" cellspacing="5" align="center"
+     <table border="1" width="85%" height="300" bgcolor=#11a9c1 bordercolor="white" cellspacing="5" align="center"
      style="margin-left:auto;margin-right:auto;">
      	<tr align="center" bgcolor="white" class="ex2">
-     		<th>퍼스널 트레이닝(PT)</th>
-     		<th>필라테스</th>
-     		<th>크로스핏</th>
-     		<th>요가</th>
+     		<th><a href="pt">퍼스널 트레이닝(PT)</th>
+     		<th><a href="pilates">필라테스</th>
+     		<th><a href="crossfit">크로스핏</th>
+     		<th><a href="yoga">요가</th>
      	</tr>
      	<tr align="center" bgcolor="white">
-     		<td><a href="/include/aaa">김종국</td>
-     		<td><a href="/include/bbb">김세은</td>
-     		<td><a href="/include/ccc">박현석</td>
-     		<td><a href="/include/ddd">이가영</td>
+     		<td>김종국</td>
+     		<td>김세은</td>
+     		<td>박현석</td>
+     		<td>이가영</td>
      	</tr>
      	<tr align="center" bgcolor="white">
-     		<td><a href="/include/eee">김천호</td>
-     		<td><a href="/include/fff">박수지</td>
-     		<td><a href="/include/ggg">KEVIN</td>
-     		<td><a href="/include/hhh">최나은</td>
+     		<td>김천호</td>
+     		<td>박수지</td>
+     		<td>KEVIN</td>
+     		<td>최나은</td>
      	</tr>
      	<tr align="center" bgcolor="white">
-     		<td>A</td>
-     		<td>B</td>
-     		<td>C</td>
-     		<td>D</td>
+     		<td>박민수</td>
+     		<td>이지혜</td>
+     		<td>김대희</td>
+     		<td>윤아영</td>
      	</tr>
      	<tr align="center" bgcolor="white">
-     		<td>E</td>
-     		<td>F</td>
-     		<td>G</td>
-     		<td>H</td>
+     		<td>김준호</td>
+     		<td>정민주</td>
+     		<td>전일환</td>
+     		<td>김선혜</td>
      	</tr>
      </table>
      </div>
