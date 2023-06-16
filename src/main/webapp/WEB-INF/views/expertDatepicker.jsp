@@ -7,15 +7,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<title>레슨모아 상담신청</title>
-</head>
-<body>
-	<form action="">
-		<table>
-			상담신청 : <input type="text" id="pickDate">
-		</table>
-	</form>
-	<script type="text/javascript">
+<script type="text/javascript">
 	<!--      달력 추가 js 시작       -->
     $(document).ready(function () {
           $.datepicker.setDefaults($.datepicker.regional['ko']); 
@@ -63,5 +55,19 @@
   });
   <!--      달력 추가 js 끝       -->
 	</script>
+<title>레슨모아 상담신청</title>
+</head>
+<body>
+	<table>
+		<form action="">
+			<tr>
+				<input type="text" id="pickDate">
+			</tr>
+			<tr>
+				<input type="submit" id="pickDateChoice" value="요일 선택">
+			</tr>
+		</form>
+	</table>
+	
 </body>
 </html>

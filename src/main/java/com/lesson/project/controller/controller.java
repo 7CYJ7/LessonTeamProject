@@ -467,6 +467,11 @@ public class controller {
 		return "admin_loginOk";
 	}
 	
+	@RequestMapping(value = "/admin_index")
+	public String admin_index() {
+		return "admin_index";
+	}
+	
 	@RequestMapping(value = "/expertDatepicker")
 	public String expertDatepicker() {
 		return "expertDatepicker";

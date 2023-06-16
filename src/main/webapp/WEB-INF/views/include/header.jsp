@@ -34,8 +34,12 @@
 			%>
 			<td class="headertext"><a href="joinChoice">회원가입</a></td>
 			<%
-				} else {		
+				} else if(sessionId.equals("admin7") || sessionId.equals("admin11")) {		
 				
+			%>
+			<td class="headertext"><a href="admin_index">관리자페이지</a></td>
+			<%
+				} else {
 			%>
 			<td class="headertext"><a href="modify">회원 정보 수정</a></td>
 			<td class="margin02">&nbsp;</td>
