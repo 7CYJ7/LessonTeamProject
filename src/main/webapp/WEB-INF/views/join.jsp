@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>  
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,7 +33,9 @@
 								<form action="joinOk" method="post" name="join_frm">
 									<tr>
 										<td class="content_text">아 이 디 : </td>
-										<td><input class="inputbox01" type="text" name="mid" autofocus="autofocus" placeholder="아이디를 입력해 주세요.">&nbsp;&nbsp;&nbsp;</td>
+										<td><input class="inputbox01" type="text" name="mid" autofocus="autofocus" placeholder="아이디를 입력해 주세요.">&nbsp;									
+											<input type="button" value="중복체크">
+										</td>
 									</tr>
 									<tr>
 										<td class="content_text">비밀번호 : </td>

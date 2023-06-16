@@ -7,13 +7,13 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class MemberDto {
-	
+public class MemberDto {	
+
 	private String mid; //아이디
 	private String mpw; //비밀번호
 	private String mname; //이름
 	private String memail; //이메일
-	private String mmobile; //휴대전화번호
+	private String mmobile; //휴대전화번호	
 	private String mdate; //가입일시
 	
 
