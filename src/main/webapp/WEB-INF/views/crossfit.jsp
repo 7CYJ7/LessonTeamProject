@@ -37,7 +37,7 @@
 		     		<li>로그짐 대치점 팀장</li>
 		     		<li>CROSSFIT LV1</li>
 		     		<li>CrossFit Kettlebell Trainer</li>
-		     		<button class="w-btn w-btn-blue" type="button" id="reserve">상담예약</button>
+		     		<input class="w-btn w-btn-blue" id="reserve" type="button" value="상담예약신청" onclick="script:window.location.href='reservation'">
 	     		</ul>
      		</div>
 	 	</div>
@@ -51,7 +51,7 @@
 		     	<ul class="text">
 		     		<li>CROSSFIT LV1</li>
 		     		<li>크로스핏 오짐 대표</li>
-		     		<button class="w-btn w-btn-blue" type="button" id="reserve">상담예약</button>
+		     		<input class="w-btn w-btn-blue" id="reserve" type="button" value="상담예약신청" onclick="script:window.location.href='reservation'">
 	     		</ul>
 			 </div>
 		 </div>
@@ -66,7 +66,7 @@
 		     	<ul class="text">
 		     		<li>NASM-CES 교정운동전문가</li>
 		     		<li>대한 체력코치협회 웨이트 리프팅 LV2</li>
-		     		<button class="w-btn w-btn-blue" type="button" id="reserve">상담예약</button>
+		     		<input class="w-btn w-btn-blue" id="reserve" type="button" value="상담예약신청" onclick="script:window.location.href='reservation'">
 	     		</ul>
 			 </div>
 		 </div>
@@ -80,7 +80,7 @@
 		     	<ul class="text">
 		     		<li>생활체육지도자 2급</li>
 		     		<li>숭실대학교 체육학과 졸업</li>
-		     		<button class="w-btn w-btn-blue" type="button" id="reserve">상담예약</button>
+		     		<input class="w-btn w-btn-blue" id="reserve" type="button" value="상담예약신청" onclick="script:window.location.href='reservation'">
 	     		</ul>
 			 </div>
 		 </div>

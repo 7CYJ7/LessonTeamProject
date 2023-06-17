@@ -37,7 +37,7 @@
 		     		<li>Mat pilates Teaching Certificate</li>
 		     		<li>Refomer Teaching Certificate</li>
 		     		<li>전) 다빛 필라테스 강사</li>
-		     		<button class="w-btn w-btn-blue" type="button" id="reserve">상담예약</button>
+		     		<input class="w-btn w-btn-blue" type="button" id="reserve" value="상담예약">
 	     		</ul>
      		</div>
 	 	</div>
@@ -53,7 +53,7 @@
 		     		<li>Muscle Care Pilates 지도자 과정 수료</li>
 		     		<li>고릴라짐 필라테스 강사</li>
 		     		<li>Knee Anatomy&Injuries 세미나 수료</li>
-		     		<button class="w-btn w-btn-blue" type="button" id="reserve">상담예약</button>
+		     		<input class="w-btn w-btn-blue" type="button" id="reserve" value="상담예약">
 	     		</ul>
 			 </div>
 		 </div>
@@ -68,7 +68,7 @@
 		     	<ul class="text">
 		     		<li>Manual Therapy Certificate</li>
 		     		<li>Knee Anatomy&Injuries 세미나 수료</li>
-		     		<button class="w-btn w-btn-blue" type="button" id="reserve">상담예약</button>
+		     		<input class="w-btn w-btn-blue" type="button" id="reserve" value="상담예약">
 	     		</ul>
 			 </div>
 		 </div>
@@ -83,7 +83,7 @@
 		     		<li>운동학교 기능해부학 교육이수</li>
 		     		<li>대한기능재활협회 통증재활운동과정</li>
 		     		<li>ABC필라테스 강사</li>
-		     		<button class="w-btn w-btn-blue" type="button" id="reserve">상담예약</button>
+		     		<input class="w-btn w-btn-blue" type="button" id="reserve" value="상담예약">
 	     		</ul>
 			 </div>
 		 </div>

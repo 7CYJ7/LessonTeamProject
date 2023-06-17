@@ -25,5 +25,4 @@ public interface IDao {
 	public void replyCountMinusDao(String lrorinum); // 댓글이 달린 원글의 댓글 필드 값 -1
 	
 	
-	
 }

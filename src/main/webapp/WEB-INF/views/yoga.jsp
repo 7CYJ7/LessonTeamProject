@@ -37,7 +37,7 @@
 		     		<li>요가지도자 2급</li>
 		     		<li>임산부 요가 자격증 수료</li>
 		     		<li>요가정원 요가원 요가 강사</li>
-		     		<button class="w-btn w-btn-blue" type="button" id="reserve">상담예약</button>
+		     		<input class="w-btn w-btn-blue" id="reserve" type="button" value="상담예약신청" onclick="script:window.location.href='reservation'">
 	     		</ul>
      		</div>
 	 	</div>
@@ -53,7 +53,7 @@
 		     		<li>PURE YOGA healing yoga, Power yoga 수료</li>
 		     		<li>국제 크리스빅 에어로빅 지도자 과정 수료</li>
 		     		<li>스포애니피트니스 요가 강사</li>
-		     		<button class="w-btn w-btn-blue" type="button" id="reserve">상담예약</button>
+		     		<input class="w-btn w-btn-blue" id="reserve" type="button" value="상담예약신청" onclick="script:window.location.href='reservation'">
 	     		</ul>
 			 </div>
 		 </div>
@@ -68,7 +68,7 @@
 		     	<ul class="text">
 		     		<li>강동구 문화센터 키즈요가 강의</li>
 		     		<li>임산부 요가 자격증 수료</li>
-		     		<button class="w-btn w-btn-blue" type="button" id="reserve">상담예약</button>
+		     		<input class="w-btn w-btn-blue" id="reserve" type="button" value="상담예약신청" onclick="script:window.location.href='reservation'">
 	     		</ul>
 			 </div>
 		 </div>
@@ -83,7 +83,7 @@
 		     		<li>요가코리아 국제요가 자격증 취득</li>
 		     		<li>요가지도자 2급</li>
 		     		<li>망원 휘트니스 요가강사</li>
-		     		<button class="w-btn w-btn-blue" type="button" id="reserve">상담예약</button>
+		     		<input class="w-btn w-btn-blue" id="reserve" type="button" value="상담예약신청" onclick="script:window.location.href='reservation'">
 	     		</ul>
 			 </div>
 		 </div>
