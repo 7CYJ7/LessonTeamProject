@@ -78,7 +78,7 @@
 		     	<ul class="text">
 		     		<li>대한 선수트레이닝 자격증</li>
 		     		<li>미스터 유니버스 -75kg급 2위</li>
-		     		<li>NABBA 코리아 1위</li>
+		     		<li>NABBA 코리아 1위...</li>
 		     		<input class="w-btn w-btn-blue" id="reserve" type="button" value="상담예약신청" onclick="script:window.location.href='reservation'">
 	     		</ul>
 			 </div>
