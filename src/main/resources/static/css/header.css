@@ -12,15 +12,16 @@ tr.headerline {
 	height: 100px;
 	margin:0 auto;  /* 화면 중앙에 배치 */
 	width:100%;    /* 너비 */
-	background-color: #30cf30;
+	background-color: #ffffff;
 	
 }
 
 td.headertext {
 	font-size: 15px;
+	font-weight: bold;
 	font-family: Arial;
 	text-align: center;
-	color: #ffffff;	
+	color: #30cf30;	
 	display: inline-block; 	 
 	white-space: nowrap;
 	margin-top: 12px;
