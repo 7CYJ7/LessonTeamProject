@@ -4,16 +4,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="/resources/css/list.css">
 <link rel="stylesheet" href="/resources/css/include.css">
+<link rel="stylesheet" href="/resources/css/header.css">
+<link rel="stylesheet" href="/resources/css/footer.css">
 <title>Insert title here</title>
 </head>
 <body>
-	<div id="container">
+	
       <header>
         <div id="logo">
           <a>
-            <h1><a href="index">레슨모아</h1>
+            <h1><a href="index">LESSONMORE</h1>
           </a>
         </div>
         <nav>
@@ -26,6 +27,8 @@
           </ul>
         </nav>
       </header>
+      <hr>
+      
      <main>
      	<div class="container2">
 	     	<div class="pic">
@@ -100,6 +103,6 @@
           </ul>
         </section>
       </footer>
-    </div>
+    
 </body>
 </html>

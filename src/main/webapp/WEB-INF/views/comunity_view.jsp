@@ -5,30 +5,31 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="/resources/css/comunity.css">
-<link rel="stylesheet" type="text/css" href="/resources/css/board_view_main.css">
+<link rel="stylesheet" href="/resources/css/header.css">
+<link rel="stylesheet" href="/resources/css/footer.css">
+<link rel="stylesheet" type="text/css" href="/resources/css/comunity_view.css">
 <title>커뮤니티 게시판</title>
 </head>
 <body>
 
-	<div id="container">
-      <header>
-        <div id="logo">
-          <a>
-            <h1><a href="index">레슨모아</h1>
-          </a>
-        </div>
-        <nav>
-          <ul id="topMenu">
-            <li><a href="expert">전문가</a></li>
-            <li><a href="comunity">커뮤니티</a></li>
-            <li><a href="qanda">Q&A</a></li>
-            <li><a href="login">로그인</a></li>
-            <li><a href="join">회원가입</a></li>
-          </ul>
-        </nav>
-      </header>
-     </div>
+     <header>
+       <div id="logo">
+         <a>
+           <h1><a href="index">LESSONMORE</h1>
+         </a>
+       </div>
+       <nav>
+         <ul id="topMenu">
+           <li><a href="expert">전문가</a></li>
+           <li><a href="comunity">커뮤니티</a></li>
+           <li><a href="qanda">Q&A</a></li>
+           <li><a href="login">로그인</a></li>
+           <li><a href="join">회원가입</a></li>
+         </ul>
+       </nav>
+     </header>
+     <hr>
+     
      
      <main>
       <section id="main">
@@ -46,7 +47,7 @@
         	<tr>
         		<td align="center">${replyDto.lrid }</td>
         		<td width="70%">${replyDto.lrcontent }<br><br>${replyDto.lrdate }</td>
-        		<td align="center">
+        		<td align="center" id="button">
         			<input type="button" value="삭제" onclick="spript:window.location.href='replyDelete?lrnum=${replyDto.lrnum}&lrorinum=${boardDto.lnum }'">
         		</td>
         	</tr>
@@ -69,6 +70,17 @@
         </div>
       </section> <!-- section main 끝 -->
     </main>
+    
+    <footer>
+        <section id="bottomMenu">
+          <ul>
+            <li><a href="#">회사 소개</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">이용 약관</a></li>
+            <li><a href="#">사이트맵</a></li>
+          </ul>
+        </section>
+      </footer>
      
 </body>
 </html>

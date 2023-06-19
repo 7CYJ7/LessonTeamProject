@@ -19,6 +19,11 @@ import com.lesson.project.dto.LMPageDto;
 @Controller
 public class WebController {
 	
+	@RequestMapping(value = "/include/header_test")
+	public String header_test() {
+		return "include/header_test";
+	}
+	
 	@Autowired
 	private SqlSession sqlSession;
 	

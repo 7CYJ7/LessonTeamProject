@@ -7,16 +7,16 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="/resources/css/comunity.css">
-<link rel="stylesheet" type="text/css" href="/resources/css/board_list_main.css">
+<link rel="stylesheet" href="/resources/css/header.css">
+<link rel="stylesheet" href="/resources/css/footer.css">
 <title>커뮤니티 게시판</title>
 </head>
 <body>
   
-	<div id="container">
       <header>
         <div id="logo">
           <a>
-            <h1><a href="index">레슨모아</h1>
+            <h1><a href="index">LESSONMORE</h1>
           </a>
         </div>
         <nav>
@@ -29,10 +29,12 @@
           </ul>
         </nav>
       </header>
+      <hr>
      
      
      <main>
      <section id="main">
+     <h2 id="board_title">자유게시판</h2>
        <table>
           <tr>
             <th>번호</th>
@@ -98,11 +100,11 @@
           <ul>
             <li><a href="#">회사 소개</a></li>
             <li><a href="#">개인정보 처리방침</a></li>
-            <li><a href="#">여행 약관</a></li>
+            <li><a href="#">이용 약관</a></li>
             <li><a href="#">사이트맵</a></li>
           </ul>
         </section>
       </footer>
-     </div>
+
 </body>
 </html>
