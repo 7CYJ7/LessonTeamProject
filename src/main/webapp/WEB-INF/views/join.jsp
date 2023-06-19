@@ -34,8 +34,7 @@
 								<form action="joinOk" method="post" name="join_frm">
 									<tr>
 										<td class="content_text">아 이 디 : </td>
-										<td><input class="inputbox01" type="text" name="mid" autofocus="autofocus" placeholder="아이디를 입력해 주세요.">&nbsp;									
-											<input type="button" value="중복체크">
+										<td><input class="inputbox01" type="text" name="mid" autofocus="autofocus" placeholder="아이디를 입력해 주세요.">&nbsp;
 										</td>
 									</tr>
 									<tr>
@@ -57,8 +56,8 @@
 									<br>
 									<tr>
 										<td colspan="2" align="center">
-											<input class="content_btn01" type="button" value="이전으로" onclick="script:window.location.href='joinChoice'">											
-											<input class="content_btn01" type="submit" value="가입하기" onclick="joinCheck()">&nbsp;&nbsp;
+											<input class="content_btn01" type="button" value="이전으로" onclick="script:window.location.href='joinChoice'">&nbsp;&nbsp;											
+											<input class="content_btn01" type="button" value="가입하기" onclick="joinCheck()">
 										</td>
 									</tr>
 								</form>

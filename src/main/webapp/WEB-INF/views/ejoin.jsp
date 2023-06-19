@@ -55,7 +55,7 @@
 										<tr>
 										<td class="content_text">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별 : </td>
 										<td style="font-family: Arial;font-size: 15px;color: #808080;">
-											<input class="inputbox02" type="radio" name="egender" id="egender" value="남">남
+											<input class="inputbox02" type="radio" name="egender" id="egender" value="남" checked="checked">남
 											<input class="inputbox02" type="radio" name="egender" id="egender" value="여">여
 										</td>
 									</tr>
@@ -77,8 +77,8 @@
 									</tr>
 									<tr>
 										<td colspan="2" align="center">
-											<input class="content_btn01" type="button" value="이전으로" onclick="script:window.location.href='joinChoice'">
-											<input class="content_btn01" type="submit" value="가입하기" onclick="e_joinCheck()">&nbsp;&nbsp;
+											<input class="content_btn01" type="button" value="이전으로" onclick="script:window.location.href='joinChoice'">&nbsp;&nbsp;
+											<input class="content_btn01" type="button" value="가입하기" onclick="e_joinCheck()">
 										</td>
 									</tr>
 								</form>

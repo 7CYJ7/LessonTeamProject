@@ -484,16 +484,26 @@ public class controller {
 	}
 	
 	@RequestMapping(value = "/reservation")
-	public String reservation(HttpServletRequest request, Model model) {
+	public String reservation(HttpServletRequest request, Model model, HttpSession session) {
 		
 		String mid = request.getParameter("mid");
 		String rtemail = request.getParameter("rtemail");
 		String rtmobile = request.getParameter("rtmobile");
 		String rtdate = request.getParameter("rtdate");
 		
-		LDao dao = sqlSession.getMapper(LDao.class);
+		LDao dao = sqlSession.getMapper(LDao.class);		
 		
 		model.addAttribute("reservationDto", mid);
+		
+		String sessionId = (String) session.getAttribute("sessionId");
+		
+		MemberDto memberDto = null;
+		
+		if(sessionId == null) {
+			model.addAttribute("MemberDto", memberDto);
+		} else {
+			model.addAttribute("MemberDto", dao.getMemberInfo(sessionId));
+		}
 		
 		return "reservation";
 	}
@@ -510,19 +520,16 @@ public class controller {
 		
 		dao.reservationDao(rtdate, mid, rtemail, rtmobile);
 		
-		List<ReservationDto> reservationDtos = dao.reservationCheck(mid);
+		model.addAttribute("mid", mid);
+		model.addAttribute("rtdate", rtdate);
 		
-		model.addAttribute("reservationDtos", reservationDtos);
 		
 		return "reservationOk";
 	}
 	
 	@RequestMapping(value = "/reservationDetails")
 	public String reservationDetails(HttpSession session, Model model) {
-		
-		if((String)session.getAttribute("sessionId") == null) {
-			return "carReservationCheck";
-		}
+		String sessionId = (String)session.getAttribute("sessionId");
 		
 		LDao dao = sqlSession.getMapper(LDao.class);
 		
@@ -533,5 +540,15 @@ public class controller {
 		model.addAttribute("reservationDtos", reservationDtos);
 		
 		return "reservationDetails";
+	}
+	
+	@RequestMapping(value = "/reservationDelete")
+	public String reservationDelete(HttpServletRequest request, Model model) {
+		
+		LDao dao = sqlSession.getMapper(LDao.class);
+		
+		dao.reservationDeleteDao(request.getParameter("rtnum"));
+		
+		return "redirect:reservationDetails";
 	}
 }

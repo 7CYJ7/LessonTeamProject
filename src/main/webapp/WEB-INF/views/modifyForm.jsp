@@ -61,8 +61,8 @@
 									
 									<tr>
 										<td colspan="2" align="center">
-											<input class="content_btn01" type="submit" value="수정완료" onclick="joinCheck()">&nbsp;&nbsp;
-											<input class="content_btn01" type="button" value="수정취소" onclick="script:window.location.href='index'">
+											<input class="content_btn01" type="button" value="수정취소" onclick="script:window.location.href='index'">&nbsp;&nbsp;
+											<input class="content_btn01" type="button" value="수정완료" onclick="joinCheck()">
 										</td>										
 									</tr>
 									</form>

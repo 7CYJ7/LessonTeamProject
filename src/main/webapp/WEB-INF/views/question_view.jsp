@@ -60,7 +60,9 @@
           <textarea name="acontent" ></textarea>
           <input type="image" src="/resources/img/ok_answer.gif" id="ok_answer">          
         </div>
-        </form>        
+        </form>
+        </c:if> 
+        <c:if test="${sessionId != null }">   
         <div id="buttons">
           <a href="question_delete?qnum=${boardDto.qnum }"><img src="/resources/img/delete.png"></a>
           <a href="questionHome"><img src="/resources/img/list.png"></a>

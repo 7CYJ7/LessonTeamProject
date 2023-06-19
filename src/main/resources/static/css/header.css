@@ -1,12 +1,17 @@
 @charset "UTF-8";
 
 body {
+	
 	margin:0;
 	padding:0;
+	background-color: #ffffff;
 }
 
 tr.headerline {
-	height: 50px;
+
+	height: 100px;
+	margin:0 auto;  /* 화면 중앙에 배치 */
+	width:100%;    /* 너비 */
 	background-color: #30cf30;
 	
 }
@@ -47,6 +52,20 @@ a:hover {
 	text-decoration: underline;
 }
 
+/* 로고 */
+#logo{ 
+  float:left;   /* 왼쪽으로 플로팅 */ 
+  width:250px;   /*  너비 */ 
+  height:100px;   /* 높이 */
+  line-height:100px;  /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
+  padding-left:150px;  /* 왼쪽에 여백 */
+}
+#logo h1 {
+  font-family:fantasy;
+  font-weight:300;
+  font-size:40px;   /* 글자 크기 */
+  color:rgb(255,255,140);   /* 글자 색*/
+}
 
 
 

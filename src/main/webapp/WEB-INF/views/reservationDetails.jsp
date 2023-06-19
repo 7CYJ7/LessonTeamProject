@@ -25,10 +25,11 @@
 					<tr>
 						<td class="contentbox">
 							<center>
+							<c:forEach items="${reservationDtos }" var="reservationDtos">
 								<table border="0" cellspacing="0" cellpadding="10">
 									<tr>
 										<td class="content_text">아 이 디 : </td>
-										<td><input class="inputbox01" type="text" name="mid" value="${ReservationId }" readonly="readonly"></td>
+										<td><input class="inputbox01" type="text" name="mid" value="${reservationDtos.mid }" readonly="readonly"></td>
 									</tr>
 									<tr>
 										<td class="content_text">이 메 일 : </td>
@@ -44,13 +45,17 @@
 										<td class="content_text">날&nbsp;&nbsp;&nbsp;&nbsp;짜 : </td>
 										<td><input class="inputbox01" type="text" name="rtdate" id="pickDate" value="${reservationDtos.rtdate }" readonly="readonly"></td>
 									</tr>									
+									
+								</table>
+								</c:forEach>
+								<table>
 									<tr>
 										<td colspan="2" align="center">
-											<input class="content_btn01" type="submit" value="예약취소" onclick="script:window.location.href='test_index'">
-											<input class="content_btn01" type="button" value="홈으로" onclick="script:window.location.href='test_index'">&nbsp;&nbsp;
+											<input class="content_btn01" type="button" value="예약취소" onclick="spript:window.location.href='reservationDelete?rtnum=${rtnum}'">
+											<input class="content_btn01" type="button" value="홈으로" onclick="script:window.location.href='index'">&nbsp;&nbsp;
 										</td>										
 									</tr>
-								</table>
+									</table>
 							</center>
 						</td>
 					</tr>

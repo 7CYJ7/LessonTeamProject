@@ -28,8 +28,8 @@
 								<table border="0" cellspacing="0" cellpadding="10">
 									<tr>
 										<td class="main_text" style="text-align: center;">
-											${reservationDtos.mid }님 예약이 완료되었습니다.<br>
-											상담 예약일은 ${reservationDtos.rtdate } 입니다.<br><br>									
+											${mid }님 예약이 완료되었습니다.<br>
+											상담 예약일은 ${rtdate } 입니다.<br><br>									
 										</td>										
 									</tr>																		
 									<tr>

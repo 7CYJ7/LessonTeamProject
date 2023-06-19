@@ -148,11 +148,15 @@
 	</insert>
 	
 	<select id="reservationCheck" resultType="com.lesson.project.dto.ReservationDto">
-		SELECT * FROM le_reservation WHERE mid=#{param2}
+		SELECT * FROM le_reservation WHERE mid=#{param1}
 	</select>
 	
 	<select id="rt_getMemberInfo" resultType="com.lesson.project.dto.ReservationDto">
-		SELECT * FROM le_reservation WHERE mid=#{param2}
+		SELECT * FROM le_reservation WHERE rtnum=#{param1}
 	</select>
+	
+	<delete id="reservationDeleteDao">
+		DELETE FROM le_reservation WHERE rtnum=#{param1}
+	</delete>
 	
 </mapper>

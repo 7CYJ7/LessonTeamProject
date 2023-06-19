@@ -60,7 +60,8 @@ public interface LDao {
 	
 	//예약
 	public int reservationDao(String rtdate, String mid, String rtemail, String rtmobile); //예약
-	public ReservationDto rt_getMemberInfo(String mid);
+	public ReservationDto rt_getMemberInfo(String rtnum);
 	public List<ReservationDto> reservationCheck(String mid); //예약내역 가져오기
+	public void reservationDeleteDao(String rtnum); //예약취소
 	
 }

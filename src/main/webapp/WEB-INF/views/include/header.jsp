@@ -8,11 +8,19 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="/resources/css/header.css"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 <title>TEST HEADER</title>
 </head>
 <body>
 	<table border="0" cellspacing="0" cellpadding="" width="100%">
 		<tr class="headerline">
+		<td id="logo">
+          <a>
+            <h1><a href="index">LESSONMORE</h1>
+          </a>
+        </td>		
 			<td class="margin01">&nbsp;</td>
 			<td class="headertext"><a href="index">HOME</a></td>
 			<td class="margin02">&nbsp;</td>
@@ -41,14 +49,16 @@
 			<%
 				} else {
 			%>
-			<td class="headertext"><a href="modify">회원 정보 수정</a></td>
+			<td class="headertext"><a href="test_index">예약테스트</a></td>
+			<td class="margin02">&nbsp;</td>
+			<td class="headertext"><a href="reservationDetails">예약내역</a></td>
+			<td class="margin02">&nbsp;</td>
+			<td class="headertext"><a href="modify">회원 정보 수정</a></td>			
 			<td class="margin02">&nbsp;</td>
 			<td class="headertext"><a href="emodify">전문가 정보 수정</a></td>
 			<%
 				}
 			%>
-			<td class="margin02">&nbsp;</td>
-			<td class="headertext"><a href="expertChoice">EXPERT</a></td>
 			<td class="margin02">&nbsp;</td>
 			<td class="headertext"><a href="question">COMMUNITY</a></td>
 			<td class="margin02">&nbsp;</td>

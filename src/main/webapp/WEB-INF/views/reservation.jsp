@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="/resources/css/content.css">
 <link rel="stylesheet" href="/resources/css/title.css">
 <script type="text/javascript" src="/resources/js/reservationWriteCheck.js"></script>
-<script type="text/javascript" src="/resources/js/join.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -93,11 +92,11 @@
 									<form action="reservationOk" name="write_frm">
 									<tr>
 										<td class="content_text">아 이 디 : </td>
-										<td><input class="inputbox01" type="text" name="mid" value="${reservationDto.mid }" ></td>
+										<td><input class="inputbox01" type="text" name="mid" value="${MemberDto.mid }" autofocus="autofocus" placeholder="아이디를 입력해주세요."></td>
 									</tr>
 									<tr>
 										<td class="content_text">이 메 일 : </td>
-										<td><input class="inputbox01" type="text" name="rtemail" autofocus="autofocus" placeholder="(ex:abc@abc.com)"></td>										
+										<td><input class="inputbox01" type="text" name="rtemail" placeholder="(ex:abc@abc.com)"></td>										
 									</tr>
 									
 									<tr>
