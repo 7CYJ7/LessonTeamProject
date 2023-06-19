@@ -10,6 +10,7 @@
 <title>레슨모아 회원 가입</title>
 </head>
 <body>
+<%@ include file="include/header.jsp" %>
 	<center>
 	<table border="0" cellspacing="0" cellpadding="20" width="75%">
 		<tr>
@@ -47,11 +48,11 @@
 									</tr>
 									<tr>
 										<td class="content_text">이 메 일 : </td>
-										<td><input class="inputbox01" type="text" name="memail" placeholder="abc@abc.com"></td>
+										<td><input class="inputbox01" type="text" name="memail" placeholder="(ex:abc@abc.com)"></td>
 									</tr>
 									<tr>
 										<td class="content_text">휴대전화번호 : </td>
-										<td><input class="inputbox01" type="text" name="mmobile" placeholder="01012345678"></td>
+										<td><input class="inputbox01" type="text" name="mmobile" placeholder="(ex:01012345678)"></td>
 									</tr>
 									<br>
 									<tr>

@@ -9,6 +9,7 @@
 <title>전문가 로그인 성공</title>
 </head>
 <body>
+<%@ include file="include/header.jsp" %>
 	<%
 		int e_checkIdPwFlag = Integer.parseInt(request.getAttribute("e_checkIdPwFlag").toString());
 		

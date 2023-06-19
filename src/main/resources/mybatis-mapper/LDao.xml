@@ -138,4 +138,21 @@
 		SELECT * FROM le_admin WHERE adminId=#{param1}
 	</select>
 	
+	<!-- 예약 -->
+	<insert id="reservationDao">
+		INSERT INTO
+			le_reservation(rtnum, rtdate, mid, rtemail, rtmobile)
+				VALUES
+					(le_rt_seq.nextval, #{param1}, #{param2}, #{param3}, #{param4})
+					
+	</insert>
+	
+	<select id="reservationCheck" resultType="com.lesson.project.dto.ReservationDto">
+		SELECT * FROM le_reservation WHERE mid=#{param2}
+	</select>
+	
+	<select id="rt_getMemberInfo" resultType="com.lesson.project.dto.ReservationDto">
+		SELECT * FROM le_reservation WHERE mid=#{param2}
+	</select>
+	
 </mapper>

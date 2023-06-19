@@ -8,6 +8,7 @@ import com.lesson.project.dto.EMemberDto;
 import com.lesson.project.dto.MemberDto;
 import com.lesson.project.dto.QFileDto;
 import com.lesson.project.dto.QuestionBoardDto;
+import com.lesson.project.dto.ReservationDto;
 
 public interface LDao {
 	
@@ -56,5 +57,10 @@ public interface LDao {
 	public int admin_checkIdDao(String admin_id); //가입하려는 id의 존재여부 체크
 	public int admin_checkIdPwDao(String admin_id, String admin_pw); //아이디와 비밀번호의 일치여부 체크
 	public AdminDto admin_getMemberInfo(String admin_id); //관리자 아이디로 조회하여 회원 정보 모두 가져오기
+	
+	//예약
+	public int reservationDao(String rtdate, String mid, String rtemail, String rtmobile); //예약
+	public ReservationDto rt_getMemberInfo(String mid);
+	public List<ReservationDto> reservationCheck(String mid); //예약내역 가져오기
 	
 }

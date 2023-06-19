@@ -9,6 +9,7 @@
 <title>레슨모아 회원 가입 성공</title>
 </head>
 <body>
+<%@ include file="include/header.jsp" %>
 	<%
 		int checkId = Integer.parseInt(request.getAttribute("checkId").toString());
 	

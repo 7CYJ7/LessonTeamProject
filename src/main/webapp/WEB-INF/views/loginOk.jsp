@@ -9,6 +9,7 @@
 <title>로그인 성공</title>
 </head>
 <body>
+<%@ include file="include/header.jsp" %>
 	<%
 		int checkIdPwFlag = Integer.parseInt(request.getAttribute("checkIdPwFlag").toString());
 		

@@ -9,6 +9,7 @@
 <title>레슨모아 로그인</title>
 </head>
 <body>
+<%@ include file="include/header.jsp" %>
 	<center>
 	<table border="0" cellspacing="0" cellpadding="20" width="75%">
 		<tr>

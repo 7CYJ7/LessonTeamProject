@@ -10,6 +10,7 @@
 <title>레슨모아 전문가 가입</title>
 </head>
 <body>
+<%@ include file="include/header.jsp" %>
 <center>
 	<table border="0" cellspacing="0" cellpadding="20" width="75%">
 		<tr>
@@ -45,11 +46,11 @@
 									</tr>
 									<tr>
 										<td class="content_text">이 메 일 : </td>
-										<td><input class="inputbox01" type="text" name="eemail" placeholder="abc@abc.com"></td>
+										<td><input class="inputbox01" type="text" name="eemail" placeholder="(ex:abc@abc.com)"></td>
 									</tr>
 									<tr>
 										<td class="content_text">휴대전화번호 : </td>
-										<td><input class="inputbox01" type="text" name="emobile" placeholder="01012345678"></td>
+										<td><input class="inputbox01" type="text" name="emobile" placeholder="(ex:01012345678)"></td>
 									</tr>
 										<tr>
 										<td class="content_text">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;별 : </td>

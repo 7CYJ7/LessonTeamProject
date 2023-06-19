@@ -9,6 +9,7 @@
 <title>레슨모아 관리자 로그인 성공</title>
 </head>
 <body>
+<%@ include file="include/header.jsp" %>
 	<%
 		int admin_checkIdPwFlag = Integer.parseInt(request.getAttribute("admin_checkIdPwFlag").toString());
 		

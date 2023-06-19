@@ -21,6 +21,7 @@ import com.lesson.project.dto.PageDto;
 import com.lesson.project.dao.LDao;
 import com.lesson.project.dto.MemberDto;
 import com.lesson.project.dto.QuestionBoardDto;
+import com.lesson.project.dto.ReservationDto;
 import com.lesson.project.dto.Criteria;
 import com.lesson.project.dto.EMemberDto;
 import com.lesson.project.dto.AdminDto;
@@ -477,4 +478,60 @@ public class controller {
 		return "expertDatepicker";
 	}
 	
+	@RequestMapping(value = "/test_index")
+	public String test_index() {
+		return "test_index";
+	}
+	
+	@RequestMapping(value = "/reservation")
+	public String reservation(HttpServletRequest request, Model model) {
+		
+		String mid = request.getParameter("mid");
+		String rtemail = request.getParameter("rtemail");
+		String rtmobile = request.getParameter("rtmobile");
+		String rtdate = request.getParameter("rtdate");
+		
+		LDao dao = sqlSession.getMapper(LDao.class);
+		
+		model.addAttribute("reservationDto", mid);
+		
+		return "reservation";
+	}
+	
+	@RequestMapping(value = "/reservationOk")
+	public String reservationOk(HttpServletRequest request, Model model){				
+		
+		String mid = request.getParameter("mid");
+		String rtemail = request.getParameter("rtemail");
+		String rtmobile = request.getParameter("rtmobile");
+		String rtdate = request.getParameter("rtdate");
+		
+		LDao dao = sqlSession.getMapper(LDao.class);
+		
+		dao.reservationDao(rtdate, mid, rtemail, rtmobile);
+		
+		List<ReservationDto> reservationDtos = dao.reservationCheck(mid);
+		
+		model.addAttribute("reservationDtos", reservationDtos);
+		
+		return "reservationOk";
+	}
+	
+	@RequestMapping(value = "/reservationDetails")
+	public String reservationDetails(HttpSession session, Model model) {
+		
+		if((String)session.getAttribute("sessionId") == null) {
+			return "carReservationCheck";
+		}
+		
+		LDao dao = sqlSession.getMapper(LDao.class);
+		
+		String mid = (String) session.getAttribute("sessionId");
+		
+		List<ReservationDto> reservationDtos = dao.reservationCheck(mid);
+		
+		model.addAttribute("reservationDtos", reservationDtos);
+		
+		return "reservationDetails";
+	}
 }
