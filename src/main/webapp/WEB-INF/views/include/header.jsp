@@ -33,6 +33,15 @@
 				} else {
 			%>
 			<td class="headertext"><a href="logout">로그아웃</a></td>
+			<td class="margin02">&nbsp;</td>
+			<c:choose>
+				<c:when test="${sessionId == not empty MemberDto.mid }">
+					<td class="headertext"><a href="modify">회원 정보 수정</a></td>
+				</c:when>
+				<c:when test="${sessionId == not empty EMemberDto.eid }">
+					<td class="headertext"><a href="emodify">전문가 정보 수정</a></td>
+				</c:when>
+			</c:choose>
 			<%
 				}
 			%>
@@ -46,6 +55,7 @@
 				
 			%>
 			<td class="headertext"><a href="admin_index">관리자페이지</a></td>
+			
 			<%
 				} else  {
 			%>
@@ -53,9 +63,7 @@
 			<td class="margin02">&nbsp;</td>
 			<td class="headertext"><a href="reservationDetails">예약내역</a></td>
 			<td class="margin02">&nbsp;</td>
-			<td class="headertext"><a href="modify">회원 정보 수정</a></td>	
-			<td class="margin02">&nbsp;</td>
-			<td class="headertext"><a href="emodify">전문가 정보 수정</a></td>
+			
 			<%
 				}
 			%>
