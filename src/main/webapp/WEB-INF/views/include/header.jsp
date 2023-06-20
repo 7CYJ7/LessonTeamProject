@@ -47,13 +47,13 @@
 			%>
 			<td class="headertext"><a href="admin_index">관리자페이지</a></td>
 			<%
-				} else {
+				} else  {
 			%>
 			<td class="headertext"><a href="test_index">예약테스트</a></td>
 			<td class="margin02">&nbsp;</td>
 			<td class="headertext"><a href="reservationDetails">예약내역</a></td>
 			<td class="margin02">&nbsp;</td>
-			<td class="headertext"><a href="modify">회원 정보 수정</a></td>			
+			<td class="headertext"><a href="modify">회원 정보 수정</a></td>	
 			<td class="margin02">&nbsp;</td>
 			<td class="headertext"><a href="emodify">전문가 정보 수정</a></td>
 			<%
@@ -73,7 +73,7 @@
 			<%
 				} else {
 			%>
-			<td colspan="15" align="right"><b><c:out value="${sessionId }" /></b>님 로그인 중</td>
+			<td class="loginTitle" colspan="15" align="right"><b><c:out value="${sessionId }" /></b>님 로그인 중</td>
 			<%
 				}
 			%>

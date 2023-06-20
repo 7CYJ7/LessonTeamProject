@@ -2,42 +2,46 @@
 
 section#main h2#board_title {
   	font-size: 50px;
-	color: #30cf30;
+	color: #ffffff;
 	font-family: Arial;
 	font-weight: bold;
 }
 
 section#main div#write_title {
     text-align: center;
-    background-color: #eeeeee;
+    background-color: rgb(40,40,40);
     border-top: solid 2px #bbbbbb;
     border-bottom: solid 1px #bbbbbb;	
     padding: 5px;
     margin-top: 10px;
     width: 45%;
+    color: #ffffff;
 }
 
 section#main table {
     border-collapse:collapse;
     margin:0 auto;
     width:45%;
+    color: #ffffff;
 }
 
 section#main td {
     border-bottom:solid 1px #dddddd;
     padding:10px;
+    color: #ffffff;
 }
 
 section#main td.col1 {
     border-right:solid 1px #cccccc;
     width:150px;
     text-align:center;
+    color: #ffffff;
 }
 
 section#main #name input {
     width:150px;
     height:16px;
-    border:solid 1px #00ba2e;
+    border:solid 1px #cccccc;
 }
 
 section#main #subject input {

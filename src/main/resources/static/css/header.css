@@ -4,7 +4,7 @@ body {
 	
 	margin:0;
 	padding:0;
-	background-color: #ffffff;
+	background-color: rgb(40,40,40);
 }
 
 tr.headerline {
@@ -12,7 +12,7 @@ tr.headerline {
 	height: 100px;
 	margin:0 auto;  /* 화면 중앙에 배치 */
 	width:100%;    /* 너비 */
-	background-color: #ffffff;
+	background-color: rgb(40,40,40);
 	
 }
 
@@ -68,6 +68,9 @@ a:hover {
   color:rgb(255,255,140);   /* 글자 색*/
 }
 
-
+.loginTitle {
+	height: 40px;
+	color: #ffffff;
+}
 
 

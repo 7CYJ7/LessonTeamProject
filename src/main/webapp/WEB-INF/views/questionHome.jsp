@@ -67,7 +67,7 @@
 	            <td class="col2">
 	              <a href="question_view?qnum=${dto.qnum }">${dto.qtitle }</a>&nbsp;&nbsp;&nbsp;
 	              <c:if test="${dto.qanswercount != 0}">
-	              <span style="color:#999999;font-size: 9px;">[${dto.qanswercount }]</span>
+	              <span style="color:#ffffff;font-size: 9px;">[${dto.qanswercount }]</span>
 	              </c:if>
 	              <c:if test="${dto.qfilecount != 0}">
 	              <img width="20" src="/resources/img/file.png">
@@ -86,7 +86,7 @@
 					<c:forEach begin="${pageMaker.startPage}" end="${pageMaker.endPage}" var="num">
 						<c:choose>
 							<c:when test="${currPage == num }">
-								<span style="color:#FFFFFF;background-color: blue;;font-weight: bold;">${num}</span>&nbsp;&nbsp;&nbsp;
+								<span style="color:#ffffff;font-weight: bold;">${num}</span>&nbsp;&nbsp;&nbsp;
 							</c:when>
 							<c:otherwise>													
 								<a href="questionHome?pageNum=${num }">${num }</a>&nbsp;&nbsp;&nbsp;
