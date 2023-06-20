@@ -11,7 +11,7 @@ div p {
 	display:block;
 }
 .ex2 {
-	color:rgb(160,160,160);
+	color:rgb(160,200,255);
 	font-size:20px;
 	}
 table {
@@ -20,5 +20,5 @@ table {
 	table-layout: fixed;
 }
 .ex2 > th > a:hover {
-	color:rgb(100,100,100);
+	color:rgb(110,150,205);
 }

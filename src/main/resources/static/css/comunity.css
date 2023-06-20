@@ -27,6 +27,7 @@ section#main td {
 section#main th {
     border-top:solid 2px #aaaaaa;
     color:white;
+    border-bottom:solid 2px #aaaaaa;
 }
 
 section#main td.col1 {
