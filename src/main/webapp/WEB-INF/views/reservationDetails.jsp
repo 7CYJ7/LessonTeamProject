@@ -43,9 +43,9 @@
 										<td><input style="color:#ffffff;height: 20px;text-align: center;" class="" type="text" name="rtemail" value="${reservationDtos.rtemail }" readonly="readonly"></td>									
 										<td><input style="color:#ffffff;height: 20px;text-align: center;" class="" type="text" name="rtmobile" value="${reservationDtos.rtmobile }" readonly="readonly"></td>									
 										<td><input style="color:#ffffff;height: 20px;text-align: center;" class="" type="text" name="rtdate" id="pickDate" value="${reservationDtos.rtdate }" readonly="readonly"></td>
-										<td><input style="color:#ffffff;height: 20px;text-align: center;" class="" type="text" name="pname"  value="${profileDto.pname }" readonly="readonly"></td>
-										<td><input style="color:#ffffff;height: 20px;text-align: center;" class="" type="text" name="pcontent" value="${profileDto.pcontent}" readonly="readonly"></td>
-										<td><input style="color:#ffffff;height: 20px;text-align: center;" class="" type="text" name="ptype" value="${profileDto.ptype }" readonly="readonly"></td>
+										<td><input style="color:#ffffff;height: 20px;text-align: center;" class="" type="text" name="pname"  value="${pname }" readonly="readonly"></td>
+										<td><input style="color:#ffffff;height: 20px;text-align: center;" class="" type="text" name="pcontent" value="${pcontent}" readonly="readonly"></td>
+										<td><input style="color:#ffffff;height: 20px;text-align: center;" class="" type="text" name="ptype" value="${ptype }" readonly="readonly"></td>
 										
 									</tr>									
 									
