@@ -26,12 +26,12 @@
 	<table border="0" cellspacing="0" cellpadding="20" width="75%">
 		<tr>
 			<td class="titlebox">
-				<span class="title01">** 레슨모아 회원 가입 성공 **</span>
+				<span class="title01">** 레슨모아의 오신걸 환영합니다 **</span>
 			</td>
 		</tr>
 		<tr>
 			<td class="titlebox">
-				<span class="title02">레슨모아 회원 가입을 환영합니다!</span>
+				<span class="title02">레슨모아 회원 가입에 성공하셨습니다.</span>
 			</td>
 		</tr>
 		<tr>
@@ -46,7 +46,7 @@
 										<td class="main_text">											
 											${MemberName }님 회원 가입을 축하드립니다!<br>
 											가입하신 아이디는 ${MemberId }입니다.<br><br>
-											<input class="content_btn01" type="button" value="로그인 바로가기" onclick="script:window.location.href='login'">
+											<input class="content_btn02" type="button" value="로그인 바로가기" onclick="script:window.location.href='login'">
 										</td>										
 									</tr>									
 								</table>

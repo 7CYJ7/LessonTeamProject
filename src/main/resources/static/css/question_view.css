@@ -1,36 +1,41 @@
 section#main h2#board_title {
     margin-top:20px;
     padding:0 0 5px 0;
+    color: #ffffff;
 }
 
 section#main #view_title_box {
     border-top:solid 2px #aaaaaa;
-    background-color:#eeeeee;
+    background-color: rgb(40,40,40);
     padding:10px;
     margin-top:10px;
     width: 50%;
+    color: #ffffff;
 }
 
 section#main #view_title_box #info {
     margin-left:600px;
+    color: #ffffff;
 }
 
 section#main #view_title_box #boardTitle {
     font-size:13px;
-    color:green;
+    color: #ffffff;
 }
 
 section#main #view_content {
-    line-height:400px;
+    line-height:300px;
     padding:10px;
+    color: #ffffff;
 }
 
 section#main #comment_box {
 	width: 50%;
     height:115px;
-    background-color:#efefef;
+    background-color:rgb(40,40,40);
     border-top:solid 1px #cccccc;
     position:relative;
+    color: #ffffff;
 }
 
 section#main #comment_box textarea {
@@ -38,18 +43,21 @@ section#main #comment_box textarea {
     height:80px;
     top:15px;
     text-align: center;
+    color:#ffffff;
 }
 
 section#main #comment_box #title_comment {
 	position:absolute;
     top:15px;
     text-align: center;
+    color:#ffffff;
 }
 
 section#main #comment_box #ok_answer {
     position:absolute;
     top:15px;
    	text-align: center;
+   	color:#ffffff;
 }
 
 section#main #buttons {

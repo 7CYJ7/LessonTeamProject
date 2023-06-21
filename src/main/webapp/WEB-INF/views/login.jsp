@@ -14,12 +14,12 @@
 	<table border="0" cellspacing="0" cellpadding="20" width="75%">
 		<tr>
 			<td class="titlebox">
-				<span class="title01">레슨모아 로그인</span>
+				<span class="title01">** 레슨모아의 오신걸 환영합니다 **</span>
 			</td>
 		</tr>
 		<tr>
 			<td class="titlebox">
-				<span class="title02">레슨모아의 오신걸 환영합니다!</span>
+				<span class="title02">레슨모아 로그인</span>
 			</td>
 		</tr>
 		<tr>
@@ -38,12 +38,12 @@
 									<tr>
 										<td class="content_text">비밀번호 : </td>
 										<td><input class="inputbox01" type="password" name="mpw"></td>
-									</tr>									
+									</tr>&nbsp;&nbsp;									
 									<tr>
 										<td colspan="2" align="center">
-											<input class="content_btn02" type="submit" value="로그인"><br><br>
-											<input class="content_btn01" type="button" value="전문가 회원 가입" onclick="script:window.location.href='ejoin'">&nbsp;
-											<input class="content_btn01" type="button" value="일반 회원 가입" onclick="script:window.location.href='join'">
+											<input class="content_btn02" type="submit" value="로그인"><br>
+											<!-- <input class="content_btn01" type="button" value="전문가 회원 가입" onclick="script:window.location.href='ejoin'">&nbsp; -->
+											<input class="content_btn02" type="button" value="회원 가입" onclick="script:window.location.href='join'">
 										</td>										
 									</tr>
 									</form>

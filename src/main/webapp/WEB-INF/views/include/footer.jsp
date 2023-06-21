@@ -4,20 +4,20 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="/resources/css/footer.css">
-<title>TEST FOOTER</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<table border="0" cellspacing="0" cellpadding="" width="100%">
-		<tr>
-			<td class="marginline">&nbsp;</td>
-		</tr>
-		<tr>
-			<td class="footertext">TEST HOMEPAGE</td>
-		</tr>
-		<tr>
-			<td class="footertext">This homepage is built with Spring Framework. Made by TEAM LESSON.</td>
-		</tr>
-	</table>
+
+	<footer>
+        <section id="bottomMenu">
+          <ul>
+            <li><a href="#">회사 소개</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">이용 약관</a></li>
+            <li><a href="#">사이트맵</a></li>
+          </ul>
+        </section>
+      </footer>
+      
 </body>
 </html>

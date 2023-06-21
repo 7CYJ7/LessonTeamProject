@@ -33,7 +33,7 @@
           </tr>
           <tr id="subject">
             <td class="col1">제목</td>
-            <td class="col2"><input type="text" name="qtitle"></td>
+            <td class="col2"><input type="text" name="qtitle" autofocus="autofocus"></td>
           </tr>
           <tr id="content">
             <td class="col1">내용</td>

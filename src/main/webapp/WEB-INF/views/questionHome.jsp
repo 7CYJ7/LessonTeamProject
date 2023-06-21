@@ -41,7 +41,7 @@
 	          <form action="search_list">
 	          <div id="search">	           
 	            <div id="search_select">
-	              <select name="searchOption">
+	              <select name="searchOption" style="color: #ffffff;">
 	                <option value="title">제목</option>
 	                <option value="content">내용</option>
 	                <option value="writer">글쓴이</option>

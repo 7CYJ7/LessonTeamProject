@@ -10,14 +10,17 @@ td.content_text {
 	font-weight: bold;
 	color: #ffffff;
 	text-align: right;
+	padding: 5px;
 }
 
 td.main_text {
 	font-size: 20px;
 	font-family: malgun;
-	font-weight: bold;
-	color: #808080;
+	font-weight: bold;	
 	text-align: left;
+	padding: 10px;
+	text-align: center;
+	color: #ffffff;
 }
 
 td.main_text02 {
@@ -36,6 +39,7 @@ input.inputbox01 {
 	font-size: 20px;
 	color: #808080;
 	padding: 5px;
+	margin-left: 10px;
 }
 
 input.inputbox01::placeholder {
@@ -63,6 +67,7 @@ input.content_btn01 {
 	color: rgb(40,40,40);
 	font-weight: bold;
 	padding: 5px;
+	margin-top: 10px;
 }
 
 
@@ -83,6 +88,7 @@ input.content_btn02 {
 	color: rgb(40,40,40);
 	font-weight: bold;
 	padding: 5px;
+	margin-top: 5px;
 }
 
 input.content_btn02:hover {

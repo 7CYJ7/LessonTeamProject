@@ -40,18 +40,23 @@ section#main td.col1 {
 
 section#main #name input {
     width:150px;
-    height:16px;
+    height:20px;
     border:solid 1px #cccccc;
+    color: #ffffff;
 }
 
 section#main #subject input {
     width:550px;
-    height:16px;
+    height:20px;
+    border:solid 1px #cccccc;
+    color: #ffffff;
 }
 
 section#main #content textarea {
     width:550px;
     height:200px;
+    border:solid 1px #cccccc;
+    color: #ffffff;
 }
 
 section#main #buttons {

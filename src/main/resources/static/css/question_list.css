@@ -17,13 +17,14 @@ section#main #total_search {
 
 section#main #total {
     position:absolute;
-    top:10px;
-    color : #ffffff;
+    top:10px;    
 }
 
 section#main #search {
     position:absolute;
     left:460px;
+    background-color: #ffffff;
+    color: #ffffff;
 }
 
 section#main #search_select {
@@ -40,6 +41,8 @@ section#main #search_input {
 
 section#main #search_input input {
     width:100px;
+    height: 25px;
+    background-color: #ffffff;
 }
 
 section#main #search_btn {

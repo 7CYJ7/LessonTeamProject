@@ -15,12 +15,12 @@
 	<table border="0" cellspacing="0" cellpadding="20" width="75%">
 		<tr>
 			<td class="titlebox">
-				<span class="title01">레슨모아 회원 가입</span>
+				<span class="title01">** 레슨모아의 오신걸 환영합니다 **</span>
 			</td>
 		</tr>
 		<tr>
 			<td class="titlebox">
-				<span class="title02">레슨모아의 오신걸 환영합니다!</span>
+				<span class="title02">레슨모아 회원 가입</span>
 			</td>
 		</tr>		
 		<tr>
@@ -57,7 +57,7 @@
 									<tr>
 										<td colspan="2" align="center">
 											<input class="content_btn01" type="button" value="이전으로" onclick="script:window.location.href='joinChoice'">&nbsp;&nbsp;											
-											<input class="content_btn01" type="button" value="가입하기" onclick="joinCheck()">
+											<input class="content_btn01" type="submit" value="가입하기" onclick="joinCheck()">
 										</td>
 									</tr>
 								</form>

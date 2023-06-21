@@ -1,38 +1,44 @@
+
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
 
-body {
-	
-	margin:0;
-	padding:0;
-	background-color: rgb(40,40,40);
+
+* {
+  margin:0;   /* 마진 리셋 */
+  padding:0;   /* 패딩 리셋 */
+  box-sizing: border-box;   /* 박스 영역은 테두리까지 */
+  background-color:rgb(40,40,40);
+  
+}
+a {
+  text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
+  color: inherit;
+}
+ul {
+  list-style: none;
 }
 
-tr.headerline {
 
-	height: 100px;
-	margin:0 auto;  /* 화면 중앙에 배치 */
-	width:100%;    /* 너비 */
-	background-color: rgb(40,40,40);
-	
-}
+
+/*********************************/
+/* 헤더 영역 - 로고와 내비게이션 */
+/*********************************/
+
 
 td.headertext {
 	font-size: 15px;
 	font-weight: bold;
 	font-family: Arial;
 	text-align: center;
-	color: #30cf30;	
-	display: inline-block; 	 
-	white-space: nowrap;
-	margin-top: 12px;
+	color: #ffffff;
+	width: 5%;
 }
-
 td.margin01 {
-	width: 65%;
+	width: 0%;
 }
 
 td.margin02 {
-	width: 1%;
+	width: 0%;
 }
 
 tr.marginline {
@@ -53,6 +59,11 @@ a:hover {
 	text-decoration: underline;
 }
 
+.loginTitle {
+	height: 40px;
+	color: #ffffff;
+}
+
 /* 로고 */
 #logo{ 
   float:left;   /* 왼쪽으로 플로팅 */ 
@@ -67,10 +78,3 @@ a:hover {
   font-size:40px;   /* 글자 크기 */
   color:rgb(255,255,140);   /* 글자 색*/
 }
-
-.loginTitle {
-	height: 40px;
-	color: #ffffff;
-}
-
-

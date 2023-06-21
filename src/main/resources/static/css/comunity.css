@@ -1,0 +1,92 @@
+main {
+	padding: 60px 0 200px 0;
+}
+
+section#main h2#board_title {
+    border-bottom:solid 1px #bbbbbb;
+    margin-top:20px;
+    padding:0 0 5px 0;
+    color:white;
+}
+
+
+section#main table {
+    border-collapse:collapse;
+    margin:0 auto;
+    width:100%;
+}
+
+section#main tr {
+    height:30px;
+}
+
+section#main td {
+    border-bottom:solid 1px #dddddd;
+}
+
+section#main th {
+    border-top:solid 2px #aaaaaa;
+    color:white;
+    border-bottom:solid 2px #aaaaaa;
+}
+
+section#main td.col1 {
+    width:60px;
+    text-align:center;
+    color:white;
+}
+
+section#main td.col3 {
+    width:60px;
+    text-align:center;
+    color:white;
+}
+
+section#main td.col4 {
+    width:80px;
+    text-align:center;
+    color:white;
+}
+
+section#main td.col5 {
+    width:50px;
+    text-align:center;
+    color:white;
+}
+
+section#main td a:link {
+    text-decoration:none;
+    color:white;
+}
+
+section#main td a:visited {
+    text-decoration:none;
+    color:white;
+}
+
+section#main td a:hover {
+    text-decoration:underline;
+    color:#444444;
+}
+
+section#main #buttons .col1 {
+    float:left;
+    margin-left:450px;
+}
+
+section#main #buttons .col2 {
+    float:right;
+    margin-right:10px;
+}
+
+section#main #buttons {
+    margin-top:20px;
+}
+
+section#main {
+	width:1200px;
+	margin:0 auto;
+	padding: 20px 0 0 0;
+}
+
+

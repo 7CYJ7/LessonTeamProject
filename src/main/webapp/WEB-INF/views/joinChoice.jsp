@@ -23,17 +23,17 @@
 		</tr>
 	</center>
 		<table class="content_main" border="0" cellspacing="0" cellpadding="10">
-			<form action="ejoin">
+			<!-- <form action="ejoin">
 			<tr>
 				<td colspan="2" align="center">
 					<input class="content_btn01" type="button" value="전문가 회원 가입" onclick="script:window.location.href='ejoin'">					
 				</td>										
 			</tr>
-			</form>
+			</form> -->
 			<form action="join">
 			<tr>
 				<td colspan="2" align="center">
-					<input class="content_btn01" type="button" value="일반 회원 가입" onclick="script:window.location.href='join'">					
+					<input class="content_btn01" type="button" value="회원 가입" onclick="script:window.location.href='join'">					
 				</td>										
 			</tr>
 			</form>

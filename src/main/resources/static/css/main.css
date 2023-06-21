@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+main {
+  margin:0 auto;  /* 화면 중앙에 배치 */
+  width:1200px;    /* 너비 */
+}
+
+main > section {
+  display: flex;
+  flex-direction: column;
+  min-height: 30px;
+}
+
+main div {
+  margin-top:20px;
+}
+div p {
+	color:white;
+	text-align:center;
+	font-size:40px;
+	padding: 20px 0 20px 0;
+	font-family: 'Nanum Pen Script', cursive;
+}
+
+
+.detail > img {
+  float:left; 
+  margin-right:50px;
+  border-radius:20px; 
+  width:1200px;
+  height:600px;
+}
+.detail2 > img {
+  float:left; 
+  margin-right:20px;
+  width:280px;
+  height:260px;
+  padding:20px;
+}

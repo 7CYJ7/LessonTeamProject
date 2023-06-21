@@ -1,0 +1,24 @@
+div p {
+	color:white;
+	text-align:center;
+	font-size:40px;
+	padding: 0 0 50px 0;
+	font-family: 'Nanum Pen Script', cursive;
+}
+
+.ex {
+	padding:80px 0 200px 0;
+	display:block;
+}
+.ex2 {
+	color:rgb(160,200,255);
+	font-size:20px;
+	}
+table {
+	color:white;
+	font-weight:600;
+	table-layout: fixed;
+}
+.ex2 > th > a:hover {
+	color:rgb(110,150,205);
+}

@@ -28,7 +28,7 @@
           ${boardDto.qcontent }
         </p>
         
-        <p id="file_info" >
+        <p id="file_info" style="color:#ffffff;">
         	※ 첨부파일 :
         	<a href="/resources/uploadfiles/${fileDto.qfilename }" download>${fileDto.qfileoriname }</a>
         </p>
@@ -57,7 +57,7 @@
         <input type="hidden" name="aorinum" value="${boardDto.qnum }">
         <div id="comment_box"><br>
           <img id="title_comment" src="/resources/img/title_comment.gif">&nbsp;
-          <textarea name="acontent" ></textarea>
+          <textarea name="acontent"></textarea>
           <input type="image" src="/resources/img/ok_answer.gif" id="ok_answer">          
         </div>
         </form>
