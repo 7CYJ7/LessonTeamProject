@@ -543,7 +543,7 @@ public class controller {
 	}
 	
 	@RequestMapping(value = "/reservationDelete")
-	public String reservationDelete(HttpServletRequest request, Model model) {
+	public String reservationDelete(HttpServletRequest request) {
 		
 		LDao dao = sqlSession.getMapper(LDao.class);
 		

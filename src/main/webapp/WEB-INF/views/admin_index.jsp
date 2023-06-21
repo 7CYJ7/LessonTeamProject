@@ -23,7 +23,6 @@
 			</td>
 		</tr>
 		<table border="1"  cellspacing="0" cellpadding="20" width="60%">
-			<form action="">
 				<tr>
 					<th></th>
 					<th></th>
@@ -66,7 +65,6 @@
 					<td></td>
 					<td></td>
 				</tr>
-			</form>
 		</table>
 		</table>
 		<br><br>
