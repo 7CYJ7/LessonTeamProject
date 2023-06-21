@@ -55,15 +55,12 @@
             
             <!-- <td class="headertext"><a href="emodify">전문가 정보 변경</a></td> -->
             
-			<td class="headertext"><a href="modify">MYPAGE</a></td>
-			<td class="margin02">&nbsp;</td>
-			<td class="headertext"><a href="reservationDetails">예약내역</a></td>
-			<td class="margin02">&nbsp;</td>
-			
+			<td class="headertext"><a href="mypage">MYPAGE</a></td>
+			<td class="margin02">&nbsp;</td>			
 			<%
 				}
 			%>
-			<td class="headertext"><a href="expert">전문가</a></td>
+			<td class="headertext"><a href="expert">전문가찾기</a></td>
 			<td class="margin02">&nbsp;</td>
 			<td class="headertext"><a href="comunity">COMMUNITY</a></td>
 			<td class="margin02">&nbsp;</td>
@@ -78,7 +75,7 @@
 			<%
 				} else {
 			%>
-			<td class="loginTitle" colspan="15" align="right"><b><c:out value="${sessionId }" /></b>님 로그인 중</td>
+			<td class="loginTitle" colspan="15" align="right"><b><c:out value="${sessionId }" /></b>님 로그인 중...</td>
 			<%
 				}
 			%>		

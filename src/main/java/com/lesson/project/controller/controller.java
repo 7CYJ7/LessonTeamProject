@@ -536,4 +536,10 @@ public class controller {
 		
 		return "redirect:reservationDetails";
 	}
+	
+	@RequestMapping(value = "/mypage")
+	public String mypage() {
+		
+		return "mypage";
+	}
 }

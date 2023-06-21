@@ -21,11 +21,13 @@
 		</tr>
 		<tr>
 			<td class="titlebox">
-				<span class="title02">마이페이지</span>
+				<span class="title02"></span>
 			</td>
 		</tr>
 		<tr>
-			<td>
+			<td>			
+		</table>
+		<br><br>
 				<center>
 				<table border="0" cellspacing="0" cellpadding="10" width="80%">
 					<tr>
@@ -58,19 +60,18 @@
 										<td class="content_text">가 입 일 : </td>
 										<td><input class="inputbox01" type="text" name="mdate" value="${MemberDto.mdate }" readonly="readonly"></td>
 									</tr>
-									
+								</table>
+								<br><br>									
 									<tr>
 										<td colspan="2" align="center">
-											<input class="content_btn01" type="button" value="수정취소" onclick="script:window.location.href='index'">&nbsp;&nbsp;
+											<input class="content_btn01" type="button" value="이전으로" onclick="history.back()">&nbsp;&nbsp;
 											<input class="content_btn01" type="button" value="수정완료" onclick="joinCheck()">
 										</td>										
 									</tr>
 									</form>
-								</table>
 							</center>
 						</td>
 					</tr>
-				</table>
 				</center>
 			</td>
 		</tr>	

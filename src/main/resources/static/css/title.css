@@ -23,7 +23,23 @@ td.titlebox {
 	text-align: center;
 }
 
+td.titlebox02 {
+	text-align: center;
+}
 
+td.titlebox03 {
+	text-align: center;
+	color: #ffffff;
+	height: 50px;
+	
+}
+
+td.titlebox03:hover {
+	font-family: malgun;
+	color: rgb(110,150,205);
+	font-weight: bold;
+	cursor: pointer;
+}
 
 
 

@@ -15,11 +15,13 @@
 	<table border="0" cellspacing="0" cellpadding="20" width="75%">
 		<tr>
 			<td class="titlebox">
-				<span class="title01">레슨모아 상담 예약 내역 페이지</span>
+				<span class="title01">레슨모아 상담 예약 내역</span>
 			</td>
 		</tr>
 		<tr>
 			<td>
+		</table>
+		<br><br>
 				<center>
 				<table border="0" cellspacing="0" cellpadding="10" width="80%">
 					<tr>
@@ -49,21 +51,27 @@
 								</table>
 								</c:forEach>
 								<table>
+								</table>									
+								</table>
+								<br>
+								<center>
+								<table>			
 									<tr>
 										<td colspan="2" align="center">
-											<input class="content_btn01" type="button" value="예약취소" onclick="spript:window.location.href='reservationDelete?rtnum=${rtnum}'">
-											<input class="content_btn01" type="button" value="홈으로" onclick="script:window.location.href='index'">&nbsp;&nbsp;
+											<input class="content_btn01" type="button" value="이전으로" onclick="history.back()">&nbsp;&nbsp;
+											<input class="content_btn01" type="button" value="홈으로" onclick="script:window.location.href='index'"><br>
+											<input class="content_btn01" type="button" value="예약취소" onclick="spript:window.location.href='reservationDelete?rtnum=${rtnum}'">&nbsp;&nbsp;
+											<input class="content_btn01" type="button" value="예약하러가기" onclick="script:window.location.href='expert'">
 										</td>										
 									</tr>
 									</table>
+									</center>
 							</center>
 						</td>
 					</tr>
-				</table>
 				</center>
 			</td>
-		</tr>	
-	</table>
+		</tr>
 	</center>
 </body>
 </html>

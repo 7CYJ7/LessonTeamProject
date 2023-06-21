@@ -42,10 +42,10 @@
         <table border="1" cellpadding="0" cellspacing="0" width="750">
         	<c:forEach items="${answerList }" var="answerDto">
         	<tr>
-        		<td align="center">${answerDto.aid }</td>
-        		<td width="70%">${answerDto.acontent }<br><br>${answerDto.adate }</td>
+        		<td align="center" style="font-size: 12px;color:red;">${answerDto.aid }</td>
+        		<td width="70%" style="font-size: 12px;color:#ffffff;">${answerDto.acontent }<br><br>${answerDto.adate }</td>
         		<td align="center">
-        			<input type="button" value="삭제" onclick="spript:window.location.href='answerDelete?anum=${answerDto.anum}&aorinum=${boardDto.qnum }'">
+        			<input type="button" style="color:#ffffff;" value="삭제" onclick="spript:window.location.href='answerDelete?anum=${answerDto.anum}&aorinum=${boardDto.qnum }'">
         		</td>
         	</tr>
         	</c:forEach>
