@@ -536,6 +536,10 @@ public class controller {
 		  
 		model.addAttribute("reservationDtos", reservationDtos);
 		model.addAttribute("profileDto", profileDto);
+		model.addAttribute("pname", pname);
+		model.addAttribute("pcontent", pcontent);
+		model.addAttribute("ptype", ptype);
+		
 		
 		return "reservationDetails";
 	}
