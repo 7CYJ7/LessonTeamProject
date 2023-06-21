@@ -13,6 +13,7 @@ import com.lesson.project.dto.ReservationDto;
 
 public interface LDao {
 	
+
 	//회원관리
 	public int joinDao(String mid, String mpw, String mname, String memail, String mmobile); //회원 가입
 	public int checkIdDao(String mid); //가입하려는 id의 존재여부 체크
@@ -60,7 +61,7 @@ public interface LDao {
 	public AdminDto admin_getMemberInfo(String admin_id); //관리자 아이디로 조회하여 회원 정보 모두 가져오기
 	
 	//예약
-	public int reservationDao(String rtdate, String mid, String rtemail, String rtmobile); //예약
+	public int reservationDao(String rtdate, String mid, String rtemail, String rtmobile, String pexpertname); //예약
 	public ReservationDto rt_getMemberInfo(String rtnum);
 	public List<ReservationDto> reservationCheck(String mid); //예약내역 가져오기
 	public void reservationDeleteDao(String rtnum); //예약취소

@@ -141,9 +141,9 @@
 	<!-- 예약 -->
 	<insert id="reservationDao">
 		INSERT INTO
-			le_reservation(rtnum, rtdate, mid, rtemail, rtmobile)
+			le_reservation(rtnum, rtdate, mid, rtemail, rtmobile, pexpertname)
 				VALUES
-					(le_rt_seq.nextval, #{param1}, #{param2}, #{param3}, #{param4})
+					(le_rt_seq.nextval, #{param1}, #{param2}, #{param3}, #{param4}, #{param5})
 					
 	</insert>
 	

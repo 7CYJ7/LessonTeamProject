@@ -109,6 +109,11 @@
 										<td><input class="inputbox01" type="text" name="rtdate" id="pickDate" placeholder="예약 날짜를 입력해주세요."></td>
 									</tr>									
 									<tr>
+										<td class="content_text">전&nbsp;&nbsp;문&nbsp;&nbsp;가 : </td>
+										<td><input class="inputbox01" type="text" name="pexpertname" value="${pname }"></td>
+									</tr>
+									<input type="hidden" value="${pnum }" name="pnum">
+									<tr>
 										<td colspan="2" align="center">
 											<input class="content_btn01" type="button" value="이전으로" onclick="script:window.location.href='test_index'">&nbsp;&nbsp;
 											<input class="content_btn01" type="submit" value="예약하기" onclick="writeCheck()">

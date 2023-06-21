@@ -14,5 +14,6 @@ public class ReservationDto {
 	private String mid; //예약 아이디
 	private String rtemail; //예약 이메일
 	private String rtmobile; //예약 휴대전화번호
+	private String pexpertname; //예약한 전문가 이름
 
 }

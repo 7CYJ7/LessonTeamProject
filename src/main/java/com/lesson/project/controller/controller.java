@@ -476,6 +476,7 @@ public class controller {
 		String rtemail = request.getParameter("rtemail");
 		String rtmobile = request.getParameter("rtmobile");
 		String rtdate = request.getParameter("rtdate");
+		String pnum = request.getParameter("pnum");
 		
 		LDao dao = sqlSession.getMapper(LDao.class);		
 		
@@ -491,6 +492,21 @@ public class controller {
 			model.addAttribute("MemberDto", dao.getMemberInfo(sessionId));
 		}
 		
+		if(pnum.equals("1")) {
+			model.addAttribute("pnum", pnum);
+			model.addAttribute("pname", "김종국");
+		} else if(pnum.equals("2")) {
+			model.addAttribute("pnum", pnum);
+			model.addAttribute("pname", "김천호");
+		} else if(pnum.equals("3")) {
+			model.addAttribute("pnum", pnum);
+			model.addAttribute("pname", "박민수");
+		} else if(pnum.equals("4")) {
+			model.addAttribute("pnum", pnum);
+			model.addAttribute("pname", "김준호");
+		}
+		
+		
 		return "reservation";
 	}
 	
@@ -501,10 +517,11 @@ public class controller {
 		String rtemail = request.getParameter("rtemail");
 		String rtmobile = request.getParameter("rtmobile");
 		String rtdate = request.getParameter("rtdate");
+		String pexpertname = request.getParameter("pexpertname");
 		
 		LDao dao = sqlSession.getMapper(LDao.class);
 		
-		dao.reservationDao(rtdate, mid, rtemail, rtmobile);
+		dao.reservationDao(rtdate, mid, rtemail, rtmobile, pexpertname);
 		
 		model.addAttribute("mid", mid);
 		model.addAttribute("rtdate", rtdate);

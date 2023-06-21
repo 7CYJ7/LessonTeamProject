@@ -22,7 +22,7 @@
 	     		<ul class="text">
 		     		<li>연예계 최고의 운동 매니아</li>
 		     		<li>보디빌딩 경력 18년차</li>
-		     		<input class="w-btn w-btn-blue" id="reserve" type="button" value="상담예약신청" onclick="script:window.location.href='reservation'">
+		     		<input class="w-btn w-btn-blue" id="reserve" type="button" value="상담예약신청" onclick="script:window.location.href='reservation?pnum=1'">
 	     		</ul>
      		</div>
 	 	</div>
@@ -36,7 +36,7 @@
 		     	<ul class="text">
 		     		<li>생활체육 보디빌딩 2급 지도자</li>
 		     		<li>서울시장배 일반부 1위</li>
-		     		<input class="w-btn w-btn-blue" id="reserve" type="button" value="상담예약신청" onclick="script:window.location.href='reservation'">
+		     		<input class="w-btn w-btn-blue" id="reserve" type="button" value="상담예약신청" onclick="script:window.location.href='reservation?pnum=2'">
 	     		</ul>
 			 </div>
 		 </div>
@@ -50,7 +50,7 @@
 		     	<ul class="text">
 		     		<li>17' 부산시장배 보디빌딩 -70kg 3위</li>
 		     		<li>스포랙스 퍼스널 트레이너</li>
-		     		<input class="w-btn w-btn-blue" id="reserve" type="button" value="상담예약신청" onclick="script:window.location.href='reservation'">
+		     		<input class="w-btn w-btn-blue" id="reserve" type="button" value="상담예약신청" onclick="script:window.location.href='reservation?pnum=3'">
 	     		</ul>
 			 </div>
 		 </div>
@@ -65,7 +65,7 @@
 		     		<li>대한 선수트레이닝 자격증</li>
 		     		<li>미스터 유니버스 -75kg급 2위</li>
 		     		<li>NABBA 코리아 1위</li>
-		     		<input class="w-btn w-btn-blue" id="reserve" type="button" value="상담예약신청" onclick="script:window.location.href='reservation'">
+		     		<input class="w-btn w-btn-blue" id="reserve" type="button" value="상담예약신청" onclick="script:window.location.href='reservation?pnum=4'">
 	     		</ul>
 			 </div>
 		 </div>
