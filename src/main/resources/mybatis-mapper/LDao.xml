@@ -159,4 +159,9 @@
 		DELETE FROM le_reservation WHERE rtnum=#{param1}
 	</delete>
 	
+	
+	<select id="profileCheck" resultType="com.lesson.project.dto.ProfileDto">
+		SELECT * FROM le_profile WHERE pnum=#{param1}
+	</select>
+	
 </mapper>

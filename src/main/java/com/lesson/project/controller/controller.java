@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.lesson.project.dto.PageDto;
+import com.lesson.project.dto.ProfileDto;
 import com.lesson.project.dao.LDao;
 import com.lesson.project.dto.MemberDto;
 import com.lesson.project.dto.QuestionBoardDto;
@@ -513,7 +514,13 @@ public class controller {
 	}
 	
 	@RequestMapping(value = "/reservationDetails")
-	public String reservationDetails(HttpSession session, Model model) {
+	public String reservationDetails(HttpSession session, Model model, HttpServletRequest request) {
+		
+		String pnum = request.getParameter("pnum");
+		String pname = request.getParameter("pname");
+		String pcontent = request.getParameter("pcontent");
+		String ptype = request.getParameter("ptype");
+		
 		String sessionId = (String)session.getAttribute("sessionId");
 		
 		LDao dao = sqlSession.getMapper(LDao.class);
@@ -521,8 +528,14 @@ public class controller {
 		String mid = (String) session.getAttribute("sessionId");
 		
 		List<ReservationDto> reservationDtos = dao.reservationCheck(mid);
-		
+		ProfileDto profileDto = null;
+
+		  if (pnum != null) {
+		        profileDto = dao.profileCheck(pnum);
+		    }
+		  
 		model.addAttribute("reservationDtos", reservationDtos);
+		model.addAttribute("profileDto", profileDto);
 		
 		return "reservationDetails";
 	}

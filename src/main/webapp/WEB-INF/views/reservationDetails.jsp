@@ -28,30 +28,29 @@
 						<td class="contentbox">
 							<center>
 							<c:forEach items="${reservationDtos }" var="reservationDtos">
-								<table border="0" cellspacing="0" cellpadding="10">
+								<table border="1" cellspacing="0" cellpadding="10" style="color:#ffffff;height: 40px;">
+								<tr>
+									<th>아이디</th>
+									<th>이메일</th>
+									<th>휴대전화번호</th>
+									<th>날짜</th>
+									<th>전문가 이름</th>
+									<th>전문가 내용</th>
+									<th>전문가 분야</th>
+								</tr>
 									<tr>
-										<td class="content_text">아 이 디 : </td>
-										<td><input class="inputbox01" type="text" name="mid" value="${reservationDtos.mid }" readonly="readonly"></td>
-									</tr>
-									<tr>
-										<td class="content_text">이 메 일 : </td>
-										<td><input class="inputbox01" type="text" name="rtemail" value="${reservationDtos.rtemail }" readonly="readonly"></td>										
-									</tr>
-									
-									<tr>
-										<td class="content_text">휴대전화번호 : </td>
-										<td><input class="inputbox01" type="text" name="rtmobile" value="${reservationDtos.rtmobile }" readonly="readonly"></td>										
-									</tr>
-									
-									<tr>
-										<td class="content_text">날&nbsp;&nbsp;&nbsp;&nbsp;짜 : </td>
-										<td><input class="inputbox01" type="text" name="rtdate" id="pickDate" value="${reservationDtos.rtdate }" readonly="readonly"></td>
+										<td><input style="color:#ffffff;height: 20px;text-align: center;" class="" type="text" name="mid" value="${reservationDtos.mid }" readonly="readonly"></td>									
+										<td><input style="color:#ffffff;height: 20px;text-align: center;" class="" type="text" name="rtemail" value="${reservationDtos.rtemail }" readonly="readonly"></td>									
+										<td><input style="color:#ffffff;height: 20px;text-align: center;" class="" type="text" name="rtmobile" value="${reservationDtos.rtmobile }" readonly="readonly"></td>									
+										<td><input style="color:#ffffff;height: 20px;text-align: center;" class="" type="text" name="rtdate" id="pickDate" value="${reservationDtos.rtdate }" readonly="readonly"></td>
+										<td><input style="color:#ffffff;height: 20px;text-align: center;" class="" type="text" name="pname"  value="${profileDto.pname }" readonly="readonly"></td>
+										<td><input style="color:#ffffff;height: 20px;text-align: center;" class="" type="text" name="pcontent" value="${profileDto.pcontent}" readonly="readonly"></td>
+										<td><input style="color:#ffffff;height: 20px;text-align: center;" class="" type="text" name="ptype" value="${profileDto.ptype }" readonly="readonly"></td>
+										
 									</tr>									
 									
 								</table>
-								</c:forEach>
-								<table>
-								</table>									
+								</c:forEach>																	
 								</table>
 								<br>
 								<center>

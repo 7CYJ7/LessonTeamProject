@@ -6,6 +6,7 @@ import com.lesson.project.dto.AdminDto;
 import com.lesson.project.dto.AnswerDto;
 import com.lesson.project.dto.EMemberDto;
 import com.lesson.project.dto.MemberDto;
+import com.lesson.project.dto.ProfileDto;
 import com.lesson.project.dto.QFileDto;
 import com.lesson.project.dto.QuestionBoardDto;
 import com.lesson.project.dto.ReservationDto;
@@ -64,4 +65,5 @@ public interface LDao {
 	public List<ReservationDto> reservationCheck(String mid); //예약내역 가져오기
 	public void reservationDeleteDao(String rtnum); //예약취소
 	
+	public ProfileDto profileCheck(String pnum); //
 }
