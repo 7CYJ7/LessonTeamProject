@@ -21,7 +21,7 @@
             <td class="col2">
             <c:choose>
             	<c:when test="${not empty MemberDto.mid }">
-            		<input type="text" name="mid" value="${MemberDto.mid}" readonly="readonly">
+            		<input type="text" name="qid" value="${MemberDto.mid}" readonly="readonly">
             	</c:when>
             	<c:when test="${not empty EMemberDto.eid}">
             		<input type="text" name="qid" value="${EMemberDto.eid}" readonly="readonly">
