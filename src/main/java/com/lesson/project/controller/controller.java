@@ -67,39 +67,39 @@ public class controller {
 		return "redirect:login";
 	}
 	
-//	@RequestMapping(value = "/elogin")
-//	public String elogin() {
-//		return "elogin";		
-//	}
-//	
-//	@RequestMapping(value = "/eloginOk")
-//	public String eloginOk(HttpServletRequest request, Model model, HttpSession session) {
-//		
-//		String eid = request.getParameter("eid");
-//		String epw = request.getParameter("epw");
-//		
-//		LDao dao = sqlSession.getMapper(LDao.class);
-//		
-//		int e_checkIdPwFlag = dao.e_checkIdPwDao(eid, epw);
-//		//1이면 로그인 성공, 0이면 로그인 실패
-//		
-//		model.addAttribute("e_checkIdPwFlag", e_checkIdPwFlag);
-//		
-//		if(e_checkIdPwFlag == 1) {//로그인 성공 실행
-//			session.setAttribute("sessionId", eid);			
-//			
-//			model.addAttribute("EMemberDto", dao.e_getMemberInfo(eid));
-//		}
-//		
-//		return "eloginOk";
-//	}
-//
-//	@RequestMapping(value = "/elogout")
-//	public String elogout(HttpSession session) {
-//		session.invalidate();//세션 삭제->로그아웃
-//		
-//		return "redirect:loginChoice";
-//	}	
+	@RequestMapping(value = "/elogin")
+	public String elogin() {
+		return "elogin";		
+	}
+	
+	@RequestMapping(value = "/eloginOk")
+	public String eloginOk(HttpServletRequest request, Model model, HttpSession session) {
+		
+		String eid = request.getParameter("eid");
+		String epw = request.getParameter("epw");
+		
+		LDao dao = sqlSession.getMapper(LDao.class);
+		
+		int e_checkIdPwFlag = dao.e_checkIdPwDao(eid, epw);
+		//1이면 로그인 성공, 0이면 로그인 실패
+		
+		model.addAttribute("e_checkIdPwFlag", e_checkIdPwFlag);
+		
+		if(e_checkIdPwFlag == 1) {//로그인 성공 실행
+			session.setAttribute("sessionId", eid);			
+			
+			model.addAttribute("EMemberDto", dao.e_getMemberInfo(eid));
+		}
+		
+		return "eloginOk";
+	}
+
+	@RequestMapping(value = "/elogout")
+	public String elogout(HttpSession session) {
+		session.invalidate();//세션 삭제->로그아웃
+		
+		return "redirect:loginChoice";
+	}	
 	
 	@RequestMapping(value = "/loginChoice")
 	public String loginChoice() {
